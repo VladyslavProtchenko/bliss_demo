@@ -23,7 +23,7 @@ export default function PageMain() {
           Introducing the Bliss Yogi: Your Intuitive Dashboard for Smart Building Management
         </h1>
         <p className={mainText}>
-          The Bliss software platform provides building owners and operators with a powerful, easy-to-use dashboard to monitor, analyze, and optimize all aspects of their smart building's performance in real-time.
+          The Bliss software platform provides building owners and operators with a powerful, easy-to-use dashboard to monitor, analyze, and optimize all aspects of their smart building&apos;s performance in real-time.
         </p>
         <div className={mainButtons}>
           <Button title="Book a Demo" type="orange" onClick={() => {}} />

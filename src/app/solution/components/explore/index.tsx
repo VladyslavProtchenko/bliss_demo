@@ -51,7 +51,7 @@ export default function ExplorePage() {
         <div className={card2}>
             <div className={content2}>
               <h2 className={cardTitle}>Bliss Yogi</h2>
-              <p className={cardText}>The Bliss software platform provides building owners and operators with a powerful, easy-to-use dashboard to monitor, analyze, and optimize all aspects of their smart building's performance in real-time. </p>
+              <p className={cardText}>The Bliss software platform provides building owners and operators with a powerful, easy-to-use dashboard to monitor, analyze, and optimize all aspects of their smart building&apos;s performance in real-time. </p>
               <hr  className='my-[22px] opacity-50'/>
               <h3 className={cardTitle2}>Key features:</h3>
               <p className={listItem}>- Real-Time Energy Data</p>

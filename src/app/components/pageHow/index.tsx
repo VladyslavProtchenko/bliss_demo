@@ -50,7 +50,7 @@ export default function PageHow() {
                     Our cutting-edge Bliss Genius device integrates advanced
                     sensors to monitor occupancy, temperature, humidity, and air
                     quality in real-time, providing a comprehensive overview of
-                    your building's environment.
+                    your building&apos;s environment.
                   </p>
                 </div>
               </div>
