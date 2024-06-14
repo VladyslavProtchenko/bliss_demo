@@ -1,3 +1,0 @@
-[submodule "puppeteer-cluster-fingerprint-injection"]
-    path = puppeteer-cluster-fingerprint-injection
-    url = https://github.com/welfoz/puppeteer-cluster-fingerprint-injection.git

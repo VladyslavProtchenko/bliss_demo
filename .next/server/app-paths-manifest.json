@@ -1,3 +1,6 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/yogi/page": "app/yogi/page.js",
+  "/solution/page": "app/solution/page.js",
+  "/genius/page": "app/genius/page.js"
 }

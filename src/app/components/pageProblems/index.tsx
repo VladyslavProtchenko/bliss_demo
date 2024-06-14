@@ -34,7 +34,7 @@ export default function PageProblems() {
           <h2 className={problemTitle}>The Problem</h2>
           <ul className={problemMenuConteiner}>
             {problemMenu.map((item, index: number) => (
-              <li className={problemMenuItem}>
+              <li className={problemMenuItem} key={item.title}>
                 <div
                   className={problemMenuItemHeader}
                   onClick={() => setMenu({ ...menu, [index]: !menu[index] })}

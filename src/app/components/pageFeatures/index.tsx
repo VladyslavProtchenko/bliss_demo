@@ -37,9 +37,12 @@ export default function PageFeatures() {
         </div>
         {[0,1,2,3,4,5].map((item, index)=>(
           
-          <div className={
+          <div 
+            key={item}
+            className={
               index === slide ? featureSlide : 'hidden'
-              }>
+              }
+          >
             <div className={featureSlideContent}>
               <h3 className={featureSlideTitle}>
                 Faucibus a etiam pharetra vele ultrices lorem ({item})
