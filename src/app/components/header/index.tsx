@@ -1,47 +1,65 @@
 'use client'
-import Image from 'next/image';
-import logoImage from '../../../../public/assets/Logo.png'
-import Button from '../button';
+import { useState } from 'react';
+import useOnclickOutside from "react-cool-onclickoutside";
 import { GoChevronDown, GoChevronUp } from "react-icons/go";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Link from 'next/link';
-import { useState } from 'react';
 
-const navTabs = [
-  {title:'Solution',href:'/solution' } ,
-  {title:'Product',href:'/' } ,
-  {title:'Resources',href:'/' } ,
-]
-const submenuItems =[
+import logoImage from '../../../../public/assets/Logo.png'
+import Button from '../button';
+import Image from 'next/image';
+import Link from 'next/link';
+
+const productMenu =[
   {title: 'Bliss Genius', href:'/genius',  text: 'Perfect for offices looking to optimize space utilization, gain energy consumption insights, and improve occupant experience.'},
   {title: 'Bliss GeniusPro (Coming Soon) ',href:'/', text: 'Ideal for businesses seeking advanced temperature control, enhanced energy savings, and predictive HVAC maintenance.'},
   {title: 'Bliss Yogi (Platform) ',href:'/yogi', text: 'The ultimate solution for organizations prioritizing superior air quality, maximum energy efficiency, and proactive building management.'},
 ]
 
+const solutionMenu =[
+  {title: 'Building Owners and Operators', href:'/owners',  text: 'Maximize property value and ROI with smart energy management and enhanced tenant satisfaction'},
+  {title: 'Facility Managers',href:'/managers', text: 'Streamline operations, reduce maintenance headaches, and improve building performance effortlessly.'},
+  {title: 'Tenants',href:'/tenants', text: 'Experience enhanced comfort and contribute to sustainability inyour workspace.'},
+]
+
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [open2, setOpen2] = useState(false)
+
+  const ref = useOnclickOutside(() => setOpen(false));
+  const ref2 = useOnclickOutside(() => setOpen2(false));
     return (
       <header className={header}>
         <div className={wrapper}>
           <Image alt='Bliss logo' width='52' height='28' src={logoImage} className='cursor-pointer'/>
 
           <div className={menu}>
-            {navTabs.map((item, index) => {
-              return index === 1 
-              ?(<div className={nemuItem} key={item.title} onClick={()=>setOpen(!open)}>
-                {item.title}
+              <div className={nemuItem} ref={ref} onClick={()=>setOpen(!open)}>
+                Solution
                 {open ? <GoChevronUp /> :<GoChevronDown />}
                 <div className={open ? submenu: 'hidden'}>
-                  {submenuItems.map(item=>
+                  {solutionMenu.map(item=>
                     <Link href={item.href} className={subItem} key={item.title}>
                       <h3 className={subHeader}>{item.title}</h3>
                       <p className={subText}>{item.text}</p>
                     </Link>
                   )}
                 </div>
-              </div>)
-              :(<Link href={item.href} className={nemuItem} key={item.title} >{item.title}</Link>)
-            })}
+              </div>
+              <div className={nemuItem} ref={ref2} onClick={()=>setOpen2(!open2)}>
+                Product
+                {open2 ? <GoChevronUp /> :<GoChevronDown />}
+                <div className={open2 ? submenu: 'hidden'}>
+                  {productMenu.map(item=>
+                    <Link href={item.href} className={subItem} key={item.title}>
+                      <h3 className={subHeader}>{item.title}</h3>
+                      <p className={subText}>{item.text}</p>
+                    </Link>
+                  )}
+                </div>
+              </div>
+
+
+            <Link href='/' className={nemuItem}>Resourses</Link>
           </div>
           
           <nav className={buttons}>

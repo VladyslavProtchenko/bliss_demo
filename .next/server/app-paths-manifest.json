@@ -2,6 +2,9 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/genius/page": "app/genius/page.js",
   "/page": "app/page.js",
+  "/managers/page": "app/managers/page.js",
   "/solution/page": "app/solution/page.js",
-  "/yogi/page": "app/yogi/page.js"
+  "/yogi/page": "app/yogi/page.js",
+  "/owners/page": "app/owners/page.js",
+  "/tenants/page": "app/tenants/page.js"
 }

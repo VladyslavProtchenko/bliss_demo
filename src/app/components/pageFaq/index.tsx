@@ -2,19 +2,32 @@
 import { GoChevronDown, GoChevronUp } from "react-icons/go";
 import { useState } from "react";
 
-const problemMenu = [
+const faqMenuItems = [
   {
-    title: "Faucibus a etiam pharetra",
-    content:
-      "Inefficient energy usage results in higher operating costs and environmental impact",
+    title: "What makes Bliss different from other smart building solutions?",
+    content: "Bliss is specifically designed to address the unique needs and challenges of small and medium-sized buildings, offering a wireless, easy-to-install, and affordable solution that combines advanced sensor technology, intelligent automation, and user-friendly controls, making it the perfect choice for building owners and managers looking to optimize their building's performance without breaking the bank.",
   },
   {
-    title: "Faucibus a etiam pharetra",
-    content: "xxx xxx xxx xxx xxx xxx xxxx  xxxx",
+    title: "How difficult is it to install and set up Bliss in my building?",
+    content: "Bliss is designed for simple, plug-and-play installation, with wireless sensors and controls that require no complex wiring or infrastructure changes. ",
   },
   {
-    title: "Faucibus a etiam pharetra ",
-    content: "xxx xxx xxx xxx xxx xxx xxxx  xxxx",
+    title: "How does Bliss ensure optimal comfort for my building's occupants?",
+    content: "Bliss continuously monitors your building's environment, including temperature, humidity, air quality, and occupancy levels, and automatically adjusts your HVAC system to maintain optimal comfort based on your building's unique patterns and preferences, ensuring that your tenants or employees are always comfortable and productive.",
+  },
+];
+const faqMenuItems2 = [
+  {
+    title: "Can Bliss scale to meet my building's changing needs?",
+    content: "Absolutely! Bliss offers a modular and expandable solution that can easily grow with your needs, whether you're managing a single building or a portfolio of properties.",
+  },
+  {
+    title: "Is Bliss suitable for all types of HVAC systems?",
+    content: "Currently, Bliss is specifically designed to work seamlessly with Rooftop Units (RTUs)",
+  },
+  {
+    title: "Do we need a Building Management System (BMS) to install Bliss?",
+    content: "No! Bliss is the perfect solution for buildings without a BMS, as it provides a standalone, all-in-one system for monitoring and optimizing your building's performance.",
   },
 ];
 
@@ -35,7 +48,7 @@ export default function PageFaq() {
         <h2 className={faqTitle}>FAQ</h2>
         <div className="flex justify-between flex-col md:flex-row">
           <ul className={faqMenu + " border-b-[0px] md:border-b-[1px]"}>
-            {problemMenu.map((item, index: number) => (
+            {faqMenuItems.map((item, index: number) => (
               <li className={faqMenuItem} key={item.title}>
                 <div
                   className={problemMenuItemHeader}
@@ -55,7 +68,7 @@ export default function PageFaq() {
             ))}
           </ul>
           <ul className={faqMenu}>
-            {problemMenu.map((item, index: number) => (
+            {faqMenuItems2.map((item, index: number) => (
               <li className={faqMenuItem} key={item.title}>
                 <div
                   className={problemMenuItemHeader}
@@ -79,15 +92,15 @@ export default function PageFaq() {
   );
 }
 
-const faq = "px-[30px] md:px-[60px] lg:px-[100px] py-[60px] w-full";
+const faq = " max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px] w-full";
 const faqTitle = "text-gray text-[40px] w-full text-start mb-[40px]";
 const faqMenu =
   "flex w-full md:w-[48%] flex-col border-b-[1px] border-[#333] md:mb-[30px]";
 const faqMenuItem =
-  "flex flex-col py-[26px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
+  "flex  flex-col py-[26px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
 
 
-const problemMenuItemHeader = "flex justify-between";
+const problemMenuItemHeader = "flex justify-between items-start";
 
 const problemMenuTitle = "text-[18px]";
 const problemMenuText = "text-[18px] font-thin pr-10";

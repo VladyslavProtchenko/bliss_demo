@@ -8,7 +8,7 @@ export default function Banner() {
       <section className={discover}>
         <article className={box}>
           <div className={content}>
-            <h2 className={title}>&quot;Since installing Bliss Genius, our office has seen a significant reduction in energy consumption and an increase in employee satisfaction. The device is incredibly user-friendly and provides us with valuable insights to optimize our building&apos;s performance.&quot;</h2>
+            <h2 className={title}>&ldquo;Since installing Bliss Genius, our office has seen a significant reduction in energy consumption and an increase in employee satisfaction. The device is incredibly user-friendly and provides us with valuable insights to optimize our building&apos;s performance.&ldquo;</h2>
             <p className={text}>Sarah, Facility Manager,<br /> XYZ Corporation</p>
             <Button
               title="Schedule a Demo of Bliss"

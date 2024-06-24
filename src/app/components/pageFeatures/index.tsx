@@ -4,11 +4,29 @@ import sliderImg from "../../../../public/assets/sliderImg.png";
 import Slider from 'react-slick';
 
 const featuresTabs: string[] = [
-  "Real-Time Energy Data",
-  "Occupant Comfort Monitoring",
-  "Remote Device Management",
-  "Bliss Efficiency Action",
-  "Іnsightful Reporting",
+  "Automated Energy Savings",
+  "Bliss Actions",
+  "Occupant-Centric Comfort",
+  "Remote Management",
+];
+
+const featuresCards: {title:string, text:string}[] = [
+  {
+    title:"Effortless and Automatic Energy Efficiency with Advanced Machine Learning", 
+    text:"At the heart of Bliss is a powerful machine learning engine that continuously analyzes your building's data to identify opportunities for optimization. By making intelligent, real-time decisions, Bliss automatically adjusts your HVAC system, lighting, and plug loads to reduce energy waste and maintain optimal comfort. With Bliss, your building becomes a smarter, more efficient version of itself."
+  },
+  {
+    title:"Automated Energy Optimization for Maximum Savings", 
+    text:"Bliss takes energy efficiency to new heights with its intelligent Bliss Efficiency Actions. By continuously analyzing data, occupant feedback, and usage patterns, Bliss identifies opportunities for energy savings and automatically takes action to optimize performance. From adjusting HVAC setpoints and turning off unused lights and equipment, to intelligently managing plug loads, Bliss Efficiency Actions work tirelessly to reduce waste and maximize your energy savings."
+  },
+  {
+    title:"Prioritize Comfort and Well-Being with Occupant Feedback", 
+    text:"Bliss puts the comfort and well-being of your building's occupants at the forefront. By actively seeking feedback through the Bliss Sense device and continuously monitoring environmental conditions, our system creates a personalized and responsive environment that adapts to the unique needs and preferences of each individual. Occupants can easily express their comfort levels and preferences, while also accessing real-time information on indoor environmental quality. With Bliss, you can create a building that prioritizes the health, happiness, and productivity of your occupants, fostering a more satisfied and engaged community."
+  },
+  {
+    title:"Seamless Control and Insights From Anywhere", 
+    text:"With Bliss, you have the power to monitor and manage your building's performance from anywhere, at any time. The intuitive, user-friendly dashboard provides real-time insights, smart alerts, and comprehensive reporting, empowering you to make data-driven decisions that enhance comfort, efficiency, and sustainability. Whether you need to troubleshoot issues or schedule maintenance, Bliss allows you to do it all remotely, saving you time and resources."
+  },
 ];
 export default function PageFeatures() {
   const [slide, setSlide] = useState<number>(0);
@@ -17,57 +35,57 @@ export default function PageFeatures() {
   return (
 
       <section className={features}>
-        <h1 className={featuresTitle}>Key Features</h1>
-        <div className={featuresSlider}>
-          {featuresTabs.map((item, index) => (
-            <span
-              key={item}
+        <div className={wrapper}>
+          <h1 className={featuresTitle}>Your Intelligent Building Energy Optimization Solution</h1>
+          <div className={featuresSlider}>
+            {featuresTabs.map((item, index) => (
+              <span
+                key={item}
+                className={
+                  index == slide ? featuresSliderItemActive : featuresSliderItem
+                }
+                onClick={() => {
+                  setSlide(index)
+                  if(!sliderRef.current) return;
+                  sliderRef.current.slickGoTo(index)
+                }}
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+          {featuresCards.map((item, index)=>(
+            
+            <div 
+              key={item.title}
               className={
-                index == slide ? featuresSliderItemActive : featuresSliderItem
-              }
-              onClick={() => {
-                setSlide(index)
-                if(!sliderRef.current) return;
-                sliderRef.current.slickGoTo(index)
-              }}
+                index === slide ? featureSlide : 'hidden'
+                }
             >
-              {item}
-            </span>
+              <div className={featureSlideContent}>
+                <h3 className={featureSlideTitle}>
+                  {item.title}
+                </h3>
+                <div className={featureSlideText}>
+                  {item.text}
+                </div>
+              </div>
+              <img
+                alt="image of office"
+                src={sliderImg.src}
+                className={featureSlideImage}
+              />
+            </div>
           ))}
         </div>
-        {[0,1,2,3,4,5].map((item, index)=>(
-          
-          <div 
-            key={item}
-            className={
-              index === slide ? featureSlide : 'hidden'
-              }
-          >
-            <div className={featureSlideContent}>
-              <h3 className={featureSlideTitle}>
-                Faucibus a etiam pharetra vele ultrices lorem ({item})
-              </h3>
-              <div className={featureSlideText}>
-                The dashboard displays live energy consumption data, allowing you
-                to track usage patterns and identify opportunities for efficiency
-                improvements at a glance. Visualize data through intuitive charts
-                and graphs to gain valuable insights.
-              </div>
-            </div>
-            <img
-              alt="image of office"
-              src={sliderImg.src}
-              className={featureSlideImage}
-            />
-          </div>
-        ))}
       </section>
 
   );
 }
 
 
-const features = "w-full bg-bgLight px-[30px] md:px-[60px] lg:px-[100px] py-[60px] ";
+const features = " flex justify-center w-full bg-bgLight  ";
+const wrapper = 'max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px]'
 const featuresTitle = "w-full md:text-center text-[#333] text-[40px] mb-[60px] ";
 const featuresSlider = "flex flex-wrap lg:flex-nowrap ";
 const featuresSliderItem = "w-full sm:w-1/2 px-auto  text-center pb-[23px] border-b-[1px] opacity-25 cursor-pointer";

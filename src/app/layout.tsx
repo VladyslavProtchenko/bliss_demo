@@ -31,4 +31,4 @@ export default function RootLayout({
   );
 }
 
-const content = "flex flex-grow items-start ";
+const content = "flex w-full justify-center flex-grow items-start ";

@@ -10,14 +10,15 @@ import PagePricing from "./components/pagePricing";
 import PageProblems from "./components/pageProblems";
 import PageStatistic from "./components/pageStatistic";
 import PageWhy from "./components/pageWhy";
-
+import ExplorePage from "./components/explore";
 export default function Home() {
 
   return (
     <main className={container}>
       <PageMain/>
       <PageProblems />
-      <PageSolutions />
+
+      <ExplorePage />
       <PageFeatures />
       <PageWhy />
       <PageDiscover />
@@ -28,4 +29,4 @@ export default function Home() {
     </main>
   );
 }
-const container = "flex w-full flex-col max-w-[1440px] items-center";
+const container = "w-full flex flex-col items-center";

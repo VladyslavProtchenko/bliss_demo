@@ -7,17 +7,17 @@ import problemImg from "../../../../public/assets/gadgets.png";
 
 const problemMenu = [
   {
-    title: "Faucibus a etiam pharetra",
+    title: "Energy Waste Drains Resources",
     content:
-      "Inefficient energy usage results in higher operating costs and environmental impact",
+      "Small and medium-sized buildings often struggle with inefficient HVAC systems, leading to excessive energy consumption and inflated utility bills. This not only impacts the bottom line but also contributes to a larger carbon footprint.",
   },
   {
-    title: "Faucibus a etiam pharetra",
-    content: "xxx xxx xxx xxx xxx xxx xxxx  xxxx",
+    title: "Comfort Imbalances Hinder Productivity",
+    content: " Inconsistent temperatures and poor air quality across different zones create discomfort, affecting occupant satisfaction and overall performance. Without proper monitoring and control, maintaining an optimal environment becomes a constant challenge.",
   },
   {
-    title: "Faucibus a etiam pharetra ",
-    content: "xxx xxx xxx xxx xxx xxx xxxx  xxxx",
+    title: "Limited Insights Hamper Decision-Making",
+    content: "Without advanced monitoring systems, building managers lack the data needed to make informed decisions about energy use and space optimization. This leads to missed opportunities for improvement and potential oversights in building management.",
   },
 ];
 
@@ -63,9 +63,9 @@ export default function PageProblems() {
       </section>
   );
 }
-const problem =  "flex flex-col lg:flex-row px-[30px] md:px-[60px] lg:px-[100px] py-[80px]  w-full items-center";
+const problem =  "flex max-w-[1440px] flex-col lg:flex-row px-[30px] md:px-[60px] lg:px-[100px] py-[80px]  w-full items-start";
 const problemContent = " w-full lg:w-1/2 pb-[40px] lg:pb-0";
-const problemTitle = "text-[40px] font-medium text-[#333] mb-[30px]";
+const problemTitle = "text-[36px] font-medium text-[#333] mb-[30px]";
 const problemMenuConteiner =  "flex flex-col border-b-[1px] border-[#333] mb-[30px]";
 const problemMenuItem = "flex flex-col py-[36px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
 const problemMenuItemHeader = "flex justify-between";
