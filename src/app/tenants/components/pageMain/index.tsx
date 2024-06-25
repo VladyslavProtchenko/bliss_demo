@@ -44,11 +44,11 @@ export default function PageMain() {
   );
 }
 
-const wrapper = 'max-w-[1440px] flex w-full'
+const wrapper = 'max-w-[1440px] flex w-full flex-col lg:flex-row'
 const absolute = 'w-full h-full absolute overflow-hidden'
-const image = 'w-full lg:w-1/2 h-full z-20 translate-y-[40px] lg:translate-y-[100px] lg:pr-[60px]'
+const image = 'w-full xl:w-1/2 h-full z-20 translate-y-[40px] lg:translate-y-[100px] lg:pr-[60px] lg:w-1/3'
 const main =  "relative flex w-full justify-center bg-cover bg-no-repeat  flex-col lg:flex-row";
-const mainContent = "z-10  lg:w-1/2 w-full flex flex-col px-[30px] md:px-[60px] lg:px-[100px] py-[92px]  lg:pb-[92px] ";
+const mainContent = "z-10 xl:w-1/2  lg:w-2/3 w-full flex flex-col px-[30px] md:px-[60px] lg:px-[100px] py-[92px]  lg:pb-[92px] ";
 const blurBg = " absolute  -top-10 -left-10 -right-10  -bottom-10 w-[110%] blur-[50px] bg-green";
 const mainTitle = "text-[38px] z-10 text-bgLight font-medium mb-[30px] leading-[46px]";
 const mainText = "text-[20px] z-10 font-thin text-white mb-[30px] leading-[26px] ";
