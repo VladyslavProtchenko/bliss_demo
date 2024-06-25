@@ -10,19 +10,19 @@ export default function ExplorePage() {
   return (
       <section className={discover}>
         <div className={wrapper}>
-          <h1 className={title}>EXPLORE BLISS SOLUTIONS</h1>
+          <h1 className={title}>Intelligent Building Management, Simplified</h1>
           <div className='flex flex-col xl:flex-row gap-10 mb-10'>
             <div className={card1}>
               <div className={content}>
                 <Image alt='background image' src={bgImage} width={1844} height={2896} className={img}/>
                 <Image alt='background image' src={bgImageM} width={1844} height={2896} className={imgM}/>
                 <h2 className={cardTitle}>Bliss Sense</h2>
-                <p className={cardText}>A context aware sensing device that keeps turns building into a climate-responsive, efficient, and occupant-centric space.</p>
+                <p className={cardText}>An advanced sensing device that elevates your building&apos;s intelligence. </p>
                 <hr  className='my-[22px] opacity-50'/>
                 <h3 className={cardTitle2}>Key features:</h3>
-                <p className={listItem}>- Captures real-time data on temperature, humidity, air quality, and occupancy</p>
-                <p className={listItem}>- Enables occupants to provide instant feedback on their comfort levels</p>
-                <p className={listItem}>- Creates a comprehensive environmental profile for each zone</p>
+                <p className={listItem}>- Monitors temperature, humidity, air quality, CO2 levels, and occupancy with precision</p>
+                <p className={listItem}>- Features an intuitive e-ink display for instant occupant feedback</p>
+                <p className={listItem}>- Powered by built-in solar cells for maintenance-free operation</p>
               </div>
             </div>
 
@@ -30,13 +30,13 @@ export default function ExplorePage() {
               <Image alt='background image' src={bgImage} width={1844} height={2896} className={img}/>
               <Image alt='background image' src={bgImageM} width={1844} height={2896} className={imgM}/>
               <div className={content}>
-                <h2 className={cardTitle}>Smart Thermostat</h2>
-                <p className={cardText}>An easy-to-install smart thermostat that connects your existing HVAC system to the Bliss network.</p>
+                <h2 className={cardTitle}>Bliss Connect</h2>
+                <p className={cardText}>A powerful, compact gateway that brings intelligent decision-making right to your building. </p>
                 <hr  className='my-[22px] opacity-50'/>
                 <h3 className={cardTitle2}>Key features:</h3>
-                <p className={listItem}>- Links your HVAC system to Bliss for smarter control</p>
-                <p className={listItem}>- Enables remote temperature adjustments via the Bliss Platform</p>
-                <p className={listItem}>- Maintains a familiar interface for basic on-site temperature control</p>
+                <p className={listItem}>- Processes data on-site for instant, autonomous responses</p>
+                <p className={listItem}>- Learns and adapts to your building&apos;s unique patterns over time</p>
+                <p className={listItem}>- Enables intelligent decision-making at the edge</p>
               </div>
             </div>
           </div>
@@ -46,13 +46,13 @@ export default function ExplorePage() {
               <div className={content}>
                 <Image alt='background image' src={bgImage} width={1844} height={2896} className={img}/>
                 <Image alt='background image' src={bgImageM} width={1844} height={2896} className={imgM}/>
-                <h2 className={cardTitle}>Bliss Genius (AI software)</h2>
-                <p className={cardText}>Our intelligent software that analyzes data and optimizes your building&lsquo;s operations.</p>
+                <h2 className={cardTitle}>Smart Thermostat & Smart Plugs</h2>
+                <p className={cardText}>An intuitive, WiFi-enabled thermostat that seamlessly integrates with Bliss. </p>
                 <hr  className='my-[22px] opacity-50'/>
                 <h3 className={cardTitle2}>Key features:</h3>
-                <p className={listItem}>- Learns your building&lsquo;s behavior to predict and optimize energy use</p>
-                <p className={listItem}>- Balances energy efficiency with occupant comfort automatically</p>
-                <p className={listItem}>- Factors in weather forecasts and energy prices to reduce costs</p>
+                <p className={listItem}>- WiFi-enabled smart thermostat for HVAC system integration</p>
+                <p className={listItem}>- Smart plugs for efficiently managing plug loads of office equipment</p>
+                <p className={listItem}>- Thermostat maintains familiar interface for manual temperature adjustments</p>
 
               </div>
             </div>
@@ -63,12 +63,12 @@ export default function ExplorePage() {
               <div className={content}>
                 {/* <h2 className={cardTitle}>Bliss GeniusPro <span className={span}>Coming soon</span></h2> */}
                 <h2 className={cardTitle}>Bliss Platform</h2>
-                <p className={cardText}>Your all-in-one dashboard for monitoring and managing your building&lsquo;s performance.</p>
+                <p className={cardText}>Your command center for effortless building management.</p>
                 <hr  className='my-[22px] opacity-50'/>
                 <h3 className={cardTitle2}>Key features:</h3>
-                <p className={listItem}>- Provides a clear overview of your building&lsquo;s energy use and comfort levels</p>
-                <p className={listItem}>- Offers actionable recommendations to improve efficiency and reduce costs</p>
-                <p className={listItem}>- Allows you to control settings and generate reports from anywhere, anytime</p>
+                <p className={listItem}>- Provides a clear, real-time overview of your building&lsquo;s performance </p>
+                <p className={listItem}>- Enables remote control and monitoring from any device</p>
+                <p className={listItem}>- Generates insightful reports to drive informed decision-making</p>
 
               </div>
             </div>

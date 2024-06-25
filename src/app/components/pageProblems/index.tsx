@@ -35,7 +35,8 @@ export default function PageProblems() {
   return (
       <section className={problem}>
         <div className={problemContent}>
-          <h2 className={problemTitle}> <span className='text-red-500'>87% of Commercial Building Operators</span> in Brand Red color </h2>
+          <h2 className={problemTitle}> 
+            <span className='text-red-500'>87% of Commercial Building Operators</span> Face These Challenges. Do You?</h2>
           <ul className={problemMenuConteiner}>
             {problemMenu.map((item, index: number) => (
               <li className={problemMenuItem} key={item.title}>
@@ -64,7 +65,7 @@ export default function PageProblems() {
 }
 const problem =  "flex max-w-[1440px] flex-col lg:flex-row px-[30px] md:px-[60px] lg:px-[100px] py-[80px]  w-full items-start";
 const problemContent = " w-full lg:w-1/2 pb-[40px] lg:pb-0";
-const problemTitle = "text-[22px] uppercase font-medium text-[#333] mb-[30px]";
+const problemTitle = "text-[22px] font-medium text-[#333] mb-[30px]";
 const problemMenuConteiner =  "flex flex-col border-b-[1px] border-[#333] mb-[30px]";
 const problemMenuItem = "flex flex-col py-[36px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
 const problemMenuItemHeader = "flex justify-between";

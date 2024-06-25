@@ -18,18 +18,16 @@ export default function PageMain() {
       <div className={wrapper}>
         <div className={mainContent}>
           <h1 className={mainTitle}>
-            Turning Buildings into High-Performance Spaces
+            Transform Your Building: Boost Efficiency, Comfort, and Your Bottom Line
           </h1>
           <p className={mainText}>
-            Are you struggling to create a comfortable and productive environment for your building occupants while also trying to reduce energy waste and optimize space utilization?
-          </p>
+           Bliss is an intelligent building energy optimization solution that cuts costs, boosts tenant satisfaction, and simplifies building operations – without breaking the bank. Tailored for small and medium-sized commercial buildings, Bliss delivers advanced technology without the complexity or high price tag.          </p>
           <p className={mainText2}>
-            Introducing Bliss, the all-in-one solution designed to address the unique challenges faced by small and medium-sized commercial building owners and managers.
           </p>
           <div className={mainButtons}>
-            <Button title="Book a Demo" type="orange" onClick={() => {}} />
+            <Button title="Order a Starter Kit" type="orange" onClick={() => {}} />
             <Button
-              title="Request a Free Consultation"
+              title="Book a Demo"
               type="light"
               onClick={() => {}}
             />
