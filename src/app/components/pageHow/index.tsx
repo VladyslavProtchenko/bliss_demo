@@ -4,11 +4,11 @@ import howImg from "../../../../public/assets/howImg.png";
 import { useEffect, useRef, useState } from "react";
 
 const slides = [
-  {title:'Wireless Sensors and Controls', text:'Bliss uses advanced wireless sensors and controls to monitor and manage your building\'s environment, including temperature, humidity, air quality, and occupancy levels, providing you with a comprehensive view of your building\'s performance.'},
-  {title:'Smart Thermostat', text:'The Bliss smart thermostat serves as the hub of your system, connecting wirelessly to your sensors and controls, and providing intelligent automation and optimization based on your building\'s unique needs and preferences.'},
-  {title:'Intelligent Automation', text:'Bliss leverages advanced algorithms and machine learning to continuously analyze your building\'s data and automatically adjust your HVAC system for optimal comfort and efficiency, helping you save energy and reduce costs without lifting a finger.'},
-  {title:'User-Friendly Mobile App and Web Platform', text:'The Bliss mobile app and web platform provide intuitive tools for setup, control, monitoring, and reporting, making it easy to manage your building\'s performance from anywhere, at any time.'},
-  {title:'Continuous Optimization**', text:'Bliss continuously learns and adapts to your building\'s unique patterns and preferences, ensuring ongoing optimization and improvement over time, so your building stays comfortable and efficient no matter what.'},
+  {title:'Easy Installation', text:'Bliss kit with clearly labelled and commissioned devices and a customized installation guide for a quick and hassle-free setup.'},
+  {title:'Intelligent Monitoring', text:'Bliss continuously monitors your building\'s occupancy, temperature, air quality, and energy use through its advanced sensors.'},
+  {title:'Automated Optimization (with Bliss Genius Pro plan)', text: 'The system\'s intelligent algorithms analyze data in real-time, automatically adjusting HVAC, lighting, and plug loads for optimal comfort and efficiency.'},
+  {title:'Actionable Insights', text:'The Bliss Yogi web app provides a user-friendly dashboard with real-time data, insights, and recommendations for improving performance'},
+  {title:'Continuous Savings', text:'By constantly adapting to your building\'s unique needs, Bliss helps you save on utility bills and maintenance costs while enhancing occupant satisfaction.'},
 ]
 
 export default function PageHow() {

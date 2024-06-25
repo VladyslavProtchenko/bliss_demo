@@ -23,10 +23,6 @@ export default function ExplorePage() {
                 <p className={listItem}>- Captures real-time data on temperature, humidity, air quality, and occupancy</p>
                 <p className={listItem}>- Enables occupants to provide instant feedback on their comfort levels</p>
                 <p className={listItem}>- Creates a comprehensive environmental profile for each zone</p>
-                <div className={link}>
-                  Discover Bliss Genius
-                  <IoArrowForward className="text-24" />
-                </div>
               </div>
             </div>
 
@@ -41,10 +37,6 @@ export default function ExplorePage() {
                 <p className={listItem}>- Links your HVAC system to Bliss for smarter control</p>
                 <p className={listItem}>- Enables remote temperature adjustments via the Bliss Platform</p>
                 <p className={listItem}>- Maintains a familiar interface for basic on-site temperature control</p>
-                <div className={link}>
-                  Discover Bliss Genius
-                  <IoArrowForward className="text-24" />
-                </div>
               </div>
             </div>
           </div>
@@ -61,10 +53,7 @@ export default function ExplorePage() {
                 <p className={listItem}>- Learns your building&lsquo;s behavior to predict and optimize energy use</p>
                 <p className={listItem}>- Balances energy efficiency with occupant comfort automatically</p>
                 <p className={listItem}>- Factors in weather forecasts and energy prices to reduce costs</p>
-                <div className={link}>
-                  Discover Bliss Genius
-                  <IoArrowForward className="text-24" />
-                </div>
+
               </div>
             </div>
 
@@ -80,10 +69,7 @@ export default function ExplorePage() {
                 <p className={listItem}>- Provides a clear overview of your building&lsquo;s energy use and comfort levels</p>
                 <p className={listItem}>- Offers actionable recommendations to improve efficiency and reduce costs</p>
                 <p className={listItem}>- Allows you to control settings and generate reports from anywhere, anytime</p>
-                <div className={link}>
-                  Discover Bliss Genius
-                  <IoArrowForward className="text-24" />
-                </div>
+
               </div>
             </div>
           </div>
@@ -95,19 +81,14 @@ const span = 'font-thin text-[14px] rounded-lg text-white py-1 px-3 bg-green'
 
 const discover = "flex w-full justify-center bg-bgDark";
 const wrapper = 'w-full px-[30px] md:px-[60px] lg:px-[100px] py-[100px] max-w-[1440px]'
-const card1 = "relative w-full xl:w-1/2 overflow-hidden bg-white py-[50px] px-[40px] rounded-[30px] pb-[180px]";
-const card2 = " relative pb-[100px] md:pb-0 w-full overflow-hidden flex flex-col lg:flex-row overflow-hidden bg-white   rounded-[30px]";
+const card1 = "relative w-full xl:w-1/2 overflow-hidden bg-white py-[50px] px-[40px] rounded-[30px] hover:shadow-2xl cursor-pointer";
 const cardTitle = "text-[40px] mb-[22px] text-gray flex items-center gap-5";
 const cardText = "text-gray text-[16px] leading-[22px] font-thin "
 const cardTitle2 = "text-[24px] text-[#0d0e0f] mb-[15px]";
-const listItem = "text-gray lg:w-[80%] text-[16px] leading-[22px] font-thin"
+const listItem = "text-gray lg:w-[80%] text-[16px] leading-[22px] font-thin pr-[100px]"
 const link = "text-red-600 mt-[60px] text-[24px] flex items-center gap-5 width-min";
-const link2 = "w-2/3 md:w-full text-red-600 mt-[60px] text-[24px] flex items-center gap-5 width-min";
 const img = "hidden md:flex absolute bottom-0 -right-10  w-full max-w-[461px]";
-const imgM = "flex md:hidden absolute bottom-0 right-0  w-full max-w-[461px]";
-const img2 = "hidden xl:flex w-[70%]";
-const img2M = "flex xl:hidden lg:w-[60%] w-full md:w-1/2 absolute lg:top-0 bottom-0 -right-10 h-1/2 lg:h-full ";
-const content = "w-[80%] h-full flex flex-col"
-const content2 = "w-full lg:w-[70%] xl:w-[60%]  flex flex-col p-[50px] "
+const imgM = "flex md:hidden absolute  bottom-0 right-0  w-full max-w-[230px]";
+const content = "w-full md:w-[60%] lg:w-[80%]  h-full flex flex-col"
 
 const title = "text-[40px] text-gray text-center mb-[60px]" 

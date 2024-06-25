@@ -7,17 +7,21 @@ import problemImg from "../../../../public/assets/gadgets.png";
 
 const problemMenu = [
   {
-    title: "Energy Waste Drains Resources",
+    title: "Rising Energy Costs Eating into Profits",
     content:
-      "Small and medium-sized buildings often struggle with inefficient HVAC systems, leading to excessive energy consumption and inflated utility bills. This not only impacts the bottom line but also contributes to a larger carbon footprint.",
+      "Inefficient HVAC systems and energy waste in buildings are silently draining your budget. Without smart controls, you're paying for energy you don't need.",
   },
   {
-    title: "Comfort Imbalances Hinder Productivity",
-    content: " Inconsistent temperatures and poor air quality across different zones create discomfort, affecting occupant satisfaction and overall performance. Without proper monitoring and control, maintaining an optimal environment becomes a constant challenge.",
+    title: "Tenant Complaints About Comfort on the Rise",
+    content: "Temperature imbalances are more than an inconvenience – they're a threat to tenant satisfaction and retention. Current systems can't keep up with diverse space needs.",
   },
   {
-    title: "Limited Insights Hamper Decision-Making",
-    content: "Without advanced monitoring systems, building managers lack the data needed to make informed decisions about energy use and space optimization. This leads to missed opportunities for improvement and potential oversights in building management.",
+    title: "Peak Energy Prices Hitting Hard",
+    content: "Surging energy costs during peak hours are unpredictable and unmanageable. Your building is vulnerable without intelligent demand management.",
+  },
+  {
+    title: "Building Upgrades are Expensive and Complicated",
+    content: "Traditional Building Management Systems are too expensive and complex for your needs. You're left choosing between outdated controls or overpriced solutions.",
   },
 ];
 
@@ -31,7 +35,7 @@ export default function PageProblems() {
   return (
       <section className={problem}>
         <div className={problemContent}>
-          <h2 className={problemTitle}>The Problem</h2>
+          <h2 className={problemTitle}> <span className='text-red-500'>87% of Commercial Building Operators</span> in Brand Red color </h2>
           <ul className={problemMenuConteiner}>
             {problemMenu.map((item, index: number) => (
               <li className={problemMenuItem} key={item.title}>
@@ -52,12 +56,7 @@ export default function PageProblems() {
               </li>
             ))}
           </ul>
-          <Button
-            title="Why Bliss"
-            type="orange"
-            onClick={() => {}}
-            className="w-full sm:max-w-[120px]"
-          />
+
         </div>
         <img src={problemImg.src} alt='image of device'  className={problemImage}></img>
       </section>
@@ -65,7 +64,7 @@ export default function PageProblems() {
 }
 const problem =  "flex max-w-[1440px] flex-col lg:flex-row px-[30px] md:px-[60px] lg:px-[100px] py-[80px]  w-full items-start";
 const problemContent = " w-full lg:w-1/2 pb-[40px] lg:pb-0";
-const problemTitle = "text-[36px] font-medium text-[#333] mb-[30px]";
+const problemTitle = "text-[22px] uppercase font-medium text-[#333] mb-[30px]";
 const problemMenuConteiner =  "flex flex-col border-b-[1px] border-[#333] mb-[30px]";
 const problemMenuItem = "flex flex-col py-[36px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
 const problemMenuItemHeader = "flex justify-between";

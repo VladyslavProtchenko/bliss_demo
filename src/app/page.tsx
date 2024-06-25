@@ -17,7 +17,6 @@ export default function Home() {
     <main className={container}>
       <PageMain/>
       <PageProblems />
-
       <ExplorePage />
       <PageFeatures />
       <PageWhy />

@@ -44,8 +44,8 @@ export default function PageMain() {
 
 const wrapper = 'flex w-full max-w-[1440px] '
 const main =  "relative justify-center flex w-full bg-cover bg-no-repeat overflow-hidden flex-col md:flex-row";
-const mainContent = "  z-10 lg:w-2/3 xl:w-1/2 w-full flex flex-col px-[30px] md:px-[60px] lg:px-[100px] py-[92px] pb-[400px] lg:pb-[92px]  overflow-y-visible ";
-const blurBg = "lg:block hidden absolute  -top-10 -left-10  -bottom-10 w-[60%] blur-[50px] bg-green";
+const mainContent = "  z-10 lg:w-2/3 xl:w-1/2 w-full flex flex-col px-[30px] md:px-[60px] lg:pl-[100px] xl:pr-[60px]  py-[92px] pb-[400px] lg:pb-[92px]  overflow-y-visible ";
+const blurBg = "lg:block hidden absolute  -top-10 -left-10  -bottom-10 xl:w-[60%] w-[70%]  blur-[50px] bg-green";
 const blurBg2 = "lg:hidden absolute  -top-10 -left-20 -right-40  h-[80%] w-[150%] blur-[50px] bg-green";
 const mainTitle = "text-[38px] z-10 text-bgLight font-medium mb-[30px] leading-[46px]";
 const mainText = "text-[20px] z-10 font-thin text-white mb-[30px] leading-[26px] ";

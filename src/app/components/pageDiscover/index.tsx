@@ -6,7 +6,7 @@ import { IoArrowForward } from "react-icons/io5";
 export default function PageDiscover() {
   return (
       <section className={discover}>
-        <h2 className={discoverTitle}>Discover the Bliss Kit</h2>
+        <h2 className={discoverTitle}>Get Started with Bliss</h2>
         <div className={discoverCards}>
           <div className={discoverCard}>
             <img
@@ -14,16 +14,19 @@ export default function PageDiscover() {
               alt="descover devices"
               className={discoverCardImage}
             />
-            <h3 className={discoverCardTitle}>Bliss Sense</h3>
+            <h3 className={discoverCardTitle}>Bliss Starter Kit</h3>
             <p className={discoverCardText}>
-              Your building&lsquo;s eyes and ears, providing real-time occupancy data, environmental data and occupant feedback.
+              Experience the complete Bliss solution in a single area of your building:
             </p>
+            <ul className='mb-8 pl-4 list-disc'>
+              <li>1 Smart Thermostat for precise HVAC control</li>
+              <li>3 Bliss Sense devices for comprehensive environmental monitoring</li>
+              <li>AI-powered optimization for one zone</li>
+              <li>90-day access to our full analytics dashboard</li>
+            </ul>
             <div className={discoverCardFooter}>
-              <span className={discoverMore}>
-                Learn More <IoArrowForward className="text-[18px]" />
-              </span>
               <Button
-                title="Buy"
+                title="Order the Starter Kit"
                 type="orange"
                 onClick={() => {}}
                 className="px-[25px] py-[9px]"
@@ -38,18 +41,21 @@ export default function PageDiscover() {
               className={discoverCardImage}
             />
             <h3 className={discoverCardTitle}>
-              Bliss Connect
+            Bliss Complete Solution
             </h3>
             <p className={discoverCardText}>
-              The intelligent bridge that transforms your existing HVAC into a smart, efficient system.
+              Ready to optimize your entire building? Our full implementation includes:
             </p>
+            <ul className='mb-8 pl-4 list-disc'>
+              <li >AI-powered HVAC optimization across all zones</li>
+              <li>Building-wide comfort management</li>
+              <li>Comprehensive energy monitoring and savings</li>
+              <li>Intuitive dashboard for total building control</li>
+            </ul>
 
             <div className={discoverCardFooter}>
-              <span className={discoverMore}>
-                Explore Features <IoArrowForward className="text-[18px]" />
-              </span>
               <Button
-                title="Buy"
+                title="Get Started Today"
                 type="orange"
                 onClick={() => {}}
                 className="px-[25px] py-[9px]"
@@ -57,31 +63,6 @@ export default function PageDiscover() {
             </div>
           </div>
 
-          <div className={discoverCard}>
-            <img
-              src={discoverImg.src}
-              alt="descover devices"
-              className={discoverCardImage}
-            />
-            <h3 className={discoverCardTitle}>
-              Bliss Hub
-            </h3>
-            <p className={discoverCardText}>
-              The powerful brain that orchestrates your entire smart building experience.
-            </p>
-
-            <div className={discoverCardFooter}>
-              <span className={discoverMore}>
-              Get a Demo Today <IoArrowForward className="text-[18px]" />
-              </span>
-              <Button
-                title="Buy"
-                type="orange"
-                onClick={() => {}}
-                className="px-[25px] py-[9px]"
-              />
-            </div>
-          </div>
         </div>
       </section>
   );
@@ -92,7 +73,7 @@ export default function PageDiscover() {
 const discover = "max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[80px]";
 const discoverTitle = "font-gray text-[40px] w-full text-center mb-[40px]";
 const discoverCards = "flex flex-col lg:flex-row justify-between";
-const discoverCard =  "flex flex-col w-full lg:w-[32%] mb-[20px] lg:mb-0 rounded-2xl bg-bgDark p-[30px]";
+const discoverCard =  "flex flex-col w-full lg:w-[48%] mb-[20px] lg:mb-0 rounded-2xl bg-bgDark p-[30px]";
 const discoverCardImage = "bg-contain bg-no-repeat w-full ";
 const discoverCardTitle =
   "flex items-center gap-2 text-[22px] md:text-[32px] text-gray mb-4";

@@ -21,7 +21,7 @@ const featuresCards: {title:string, text:string}[] = [
   },
   {
     title:"Prioritize Comfort and Well-Being with Occupant Feedback", 
-    text:"Bliss puts the comfort and well-being of your building's occupants at the forefront. By actively seeking feedback through the Bliss Sense device and continuously monitoring environmental conditions, our system creates a personalized and responsive environment that adapts to the unique needs and preferences of each individual. Occupants can easily express their comfort levels and preferences, while also accessing real-time information on indoor environmental quality. With Bliss, you can create a building that prioritizes the health, happiness, and productivity of your occupants, fostering a more satisfied and engaged community."
+    text:"Bliss puts the comfort and well-being of your building's occupants at the forefront. By actively seeking feedback through the Bliss Sense device and continuously monitoring environmental conditions, our system creates a personalized and responsive environment that adapts to the unique needs and preferences of each individual. Occupants can easily express their comfort levels and preferences, while also accessing real-time information on indoor environmental quality."
   },
   {
     title:"Seamless Control and Insights From Anywhere", 
