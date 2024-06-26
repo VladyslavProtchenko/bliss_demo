@@ -7,7 +7,7 @@ const slides = [
   {title:'Easy Installation', text:'Bliss kit with clearly labelled and commissioned devices and a customized installation guide for a quick and hassle-free setup.'},
   {title:'Intelligent Monitoring', text:'Bliss continuously monitors your building\'s occupancy, temperature, air quality, and energy use through its advanced sensors.'},
   {title:'Automated Optimization (with Bliss Genius Pro plan)', text: 'The system\'s intelligent algorithms analyze data in real-time, automatically adjusting HVAC, lighting, and plug loads for optimal comfort and efficiency.'},
-  {title:'Actionable Insights', text:'The Bliss Yogi web app provides a user-friendly dashboard with real-time data, insights, and recommendations for improving performance'},
+  {title:'Actionable Insights', text:'The Bliss Hub web app provides a user-friendly dashboard with real-time data, insights, and recommendations for improving performance'},
   {title:'Continuous Savings', text:'By constantly adapting to your building\'s unique needs, Bliss helps you save on utility bills and maintenance costs while enhancing occupant satisfaction.'},
 ]
 
@@ -64,12 +64,6 @@ export default function PageHow() {
               <div className='py-[50px] w-full'></div>
               <div className='py-[50px] w-full'></div>
             </div>
-            <Button
-              title=" Explore Bliss Genius and Bliss Genius Pro"
-              type="orange"
-              onClick={() => {}}
-              className="sm:self-start"
-            />
           </div>
           <img src={howImg.src} alt="office photo" className={howWorksImage} />
           <h2 className={howWorksTitle2}>How Bliss Works</h2>
@@ -86,7 +80,7 @@ const howWorksContent =
 const howWorksTitle = " hidden lg:flex text-[40px] text-gray mb-[50px]";
 const howWorksTitle2 =
   "flex lg:hidden text-[40px] text-gray self-start ml-[30px]";
-const howWorksMenu = "flex flex-col mb-[40px] max-h-[500px] overflow-y-scroll scrollbar-hide";
+const howWorksMenu = "flex flex-col mb-[40px] max-h-[500px] overflow-y-scroll no-scrollbar";
 const howWorksMenuItem = "flex items-center";
 const howWorksNumber = "text-[36px] text-gray mr-[20px]";
 const howWorksItemContent = "px-[18px] py-[14px] border-bgDark border-l-[4px] ";

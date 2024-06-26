@@ -18,11 +18,10 @@ export default function PageDiscover() {
             <p className={discoverCardText}>
               Experience the complete Bliss solution in a single area of your building:
             </p>
-            <ul className='mb-8 pl-4 list-disc'>
+            <ul className='mb-8 pl-4 list-disc text-gray'>
               <li>1 Smart Thermostat for precise HVAC control</li>
               <li>3 Bliss Sense devices for comprehensive environmental monitoring</li>
               <li>AI-powered optimization for one zone</li>
-              <li>90-day access to our full analytics dashboard</li>
             </ul>
             <div className={discoverCardFooter}>
               <Button
@@ -41,16 +40,15 @@ export default function PageDiscover() {
               className={discoverCardImage}
             />
             <h3 className={discoverCardTitle}>
-            Bliss Complete Solution
+              Bliss Harmony Suite
             </h3>
             <p className={discoverCardText}>
               Ready to optimize your entire building? Our full implementation includes:
             </p>
-            <ul className='mb-8 pl-4 list-disc'>
+            <ul className='mb-8 pl-4 list-disc text-gray'>
               <li >AI-powered HVAC optimization across all zones</li>
               <li>Building-wide comfort management</li>
               <li>Comprehensive energy monitoring and savings</li>
-              <li>Intuitive dashboard for total building control</li>
             </ul>
 
             <div className={discoverCardFooter}>
@@ -80,8 +78,4 @@ const discoverCardTitle =
 const discoverCardText =
   "text-[18px] leading-[26px] font-thin text-gray mb-[30px]";
 const discoverCardFooter = "flex justify-between gap-4  items-center mt-auto";
-const discoverMore =
-  "flex gap-[20px] font-gray text-[14px] md:text-[18px] items-center cursor-pointer";
 
-const discoverSpan =
-  " text-bgLight h-[30px] bg-green p-2 flex items-center rounded-lg  text-[14px]";

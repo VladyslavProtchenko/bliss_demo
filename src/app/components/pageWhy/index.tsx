@@ -9,16 +9,16 @@ export default function PageWhy() {
         <div className={wrapper}>
           <h2 className={whyTitle}>
             Effortless Energy Optimization for Small and Medium-Sized Buildings
-            {/* Why Bliss is the <span className="text-orange">Perfect Solution</span> */}
+            
           </h2>
           <p className={whyText}>
-            Discover how Bliss empowers you to reduce energy costs, improve occupant comfort, and simplify building management with our affordable, easy-to-install smart building solution that delivers automated energy savings.
+          Discover how Bliss empowers you to delivers automated energy savings , enhance occupant comfort, and simplify building management User-friendly app allows tenants to report comfort levels for immediate adjustments
           </p>
 
           <div className={whyRow}>
             <div className={whyRowContent}>
               <h3 className={whyRowTitle}>
-                Wireless Simplicity and Ease of Installation
+              Intelligent Automation for Optimal Comfort and Efficiency
               </h3>
               <div className={whyRowItems}>
                 <div className={whyRowItem}>
@@ -27,7 +27,7 @@ export default function PageWhy() {
                     style={{ backgroundImage: `url(${whyIcon.src})` }}
                   />
                   <div className={whyRowText}>
-                    Bliss uses cutting-edge wireless sensors that are easy to install and require no complex wiring or infrastructure changes, making it ideal for buildings without a dedicated facilities team.
+                    Machine learning driven system optimizes HVAC and plug loads, cutting energy costs by up to 30%
                   </div>
                 </div>
                 <div className={whyRowItem}>
@@ -36,80 +36,16 @@ export default function PageWhy() {
                     style={{ backgroundImage: `url(${whyIcon2.src})` }}
                   />
                   <p className={whyRowText}>
-                    Our plug-and-play approach means you can set up your system quickly, with minimal disruption to your building&lsquo;s operations, saving you time and money.
+                    Intelligently manages heating, cooling based on occupancy, weather, and energy prices
                   </p>
                 </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  The Bliss kit comes with everything you need, including pre-configured sensors, a smart thermostat, and an intuitive mobile app for setup and control, ensuring a hassle-free experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-          </div>
-
-          <div className={whyRow + " flex-col-reverse"}>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-                Intelligent Automation for Optimal Comfort and Efficiency
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <div className={whyRowText}>
-                    Bliss leverages advanced algorithms and machine learning to automatically optimize your building&lsquo;s HVAC system based on real-time occupancy, weather, and environmental data, helping you strike the perfect balance between comfort and energy efficiency.
-                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <div className={whyRowText}>
-                    By continuously analyzing your building&lsquo;s unique patterns and preferences, Bliss reduces energy waste and lowers utility bills without compromising the well-being of your occupants.
-                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <div className={whyRowText}>
-                    With Bliss, you can create a more comfortable and productive environment for your tenants or employees, while also reducing your environmental impact and operating costs.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={whyRow}>
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-                Occupant-Centric Comfort and Feedback
-              </h3>
-              <div className={whyRowItems}>
                 <div className={whyRowItem}>
                   <div
                     className={whyRowItemImage}
                     style={{ backgroundImage: `url(${whyIcon.src})` }}
                   />
                   <p className={whyRowText}>
-                    Bliss prioritizes the comfort and well-being of your building&lsquo;s occupants by creating a personalized and responsive environment.
+                    Automatically turns of unused power outlets to reduce energy waste
                   </p>
                 </div>
                 <div className={whyRowItem}>
@@ -118,98 +54,7 @@ export default function PageWhy() {
                     style={{ backgroundImage: `url(${whyIcon2.src})` }}
                   />
                   <p className={whyRowText}>
-                    Our system actively seeks feedback from occupants through the Bliss Sense device, allowing them to express their preferences and comfort levels easily.
-                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <p className={whyRowText}>
-                    By continuously monitoring and analyzing occupant feedback, Bliss adapts to the unique needs and preferences of your building&lsquo;s occupants, ensuring a comfortable and productive environment.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-          </div>
-
-          <div className={whyRow + " flex-col-reverse"}>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-                Comprehensive Monitoring and Actionable Insights
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <div className={whyRowText}>
-                    Bliss provides comprehensive monitoring of your building&lsquo;s key parameters, including temperature, humidity, air quality, and occupancy levels, giving you unparalleled visibility into your building&lsquo;s performance.
-                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <div className={whyRowText}>
-                    Our smart sensors and intelligent algorithms work together to identify potential issues and opportunities for improvement, providing you with actionable insights and recommendations that help you make data-driven decisions
-                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <div className={whyRowText}>
-                    With the user-friendly Bliss web app, you can access real-time data, customizable dashboards, and detailed reports from anywhere, empowering you to optimize your building&lsquo;s performance and streamline your operations.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={whyRow}>
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-                Scalable and Future-Proof
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <p className={whyRowText}>
-                    Bliss is designed to grow with your needs, offering a modular and expandable solution that can easily adapt to your building&lsquo;s unique requirements, whether you&lsquo;re managing a single property or a portfolio of buildings.
-                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  Start with the core Bliss kit and add additional sensors, controls, or features as your needs evolve, ensuring a future-proof investment that delivers long-term value.
-                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  With Bliss, you can stay ahead of the curve and take advantage of the latest smart building technologies without having to worry about compatibility issues or expensive upgrades.
+                    Improves tenant comfort while reducing carbon footprint and operating costs
                   </p>
                 </div>
               </div>
@@ -236,7 +81,7 @@ export default function PageWhy() {
                     style={{ backgroundImage: `url(${whyIcon.src})` }}
                   />
                   <div className={whyRowText}>
-                  Bliss is specifically designed to make smart building technology accessible and affordable for small and medium-sized buildings, which have traditionally been underserved by the market.
+                    Transform your property with enterprise-level IoT technology at a fraction of traditional costs
                   </div>
                 </div>
                 <div className={whyRowItem}>
@@ -245,7 +90,156 @@ export default function PageWhy() {
                     style={{ backgroundImage: `url(${whyIcon2.src})` }}
                   />
                   <div className={whyRowText}>
-                  By focusing on wireless technology, simplified installation, and user-friendly controls, Bliss eliminates the high costs and complexity associated with traditional building management systems, making it a cost-effective solution for budget-conscious building owners and managers.
+                  Solution pays for itself through energy savings, thanks to our innovative pricing model                  </div>
+                </div>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon.src})` }}
+                  />
+                  <div className={whyRowText}>
+                  No expensive infrastructure overhauls or specialized staff needed                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={whyRow}>
+            <div className={whyRowContent}>
+              <h3 className={whyRowTitle}>
+              Occupant-Centric Comfort and Context-Aware Optimization
+              </h3>
+              <div className={whyRowItems}>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon.src})` }}
+                  />
+                  <p className={whyRowText}>
+                  Bliss Sense devices feature intuitive e-ink displays for instant occupant comfort feedback                  </p>
+                </div>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
+                  />
+                  <p className={whyRowText}>
+                  Privacy-preserving occupancy detection optimizes comfort and space utilization without compromising individual privacy                  </p>
+                </div>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon.src})` }}
+                  />
+                  <p className={whyRowText}>
+                  System continuously adapts to occupant preferences, improving comfort and satisfaction                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className={whyRowImage}
+              style={{ backgroundImage: `url(${whyImg.src})` }}
+            />
+          </div>
+
+          <div className={whyRow + " flex-col-reverse"}>
+            <div
+              className={whyRowImage}
+              style={{ backgroundImage: `url(${whyImg.src})` }}
+            />
+            <div className={whyRowContent}>
+              <h3 className={whyRowTitle}>
+              Wireless Simplicity and Rapid Installation**
+              </h3>
+              <div className={whyRowItems}>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon.src})` }}
+                  />
+                  <div className={whyRowText}>
+                  True plug-and-play setup with pre-commissioned, clearly labeled devices                  </div>
+                </div>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
+                  />
+                  <div className={whyRowText}>
+                  Customized installation guide designed for your specific office space or building
+                  </div>
+                </div>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon.src})` }}
+                  />
+                  <div className={whyRowText}>
+                  Zero disruption with quick, user-friendly installation process
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={whyRow}>
+            <div className={whyRowContent}>
+              <h3 className={whyRowTitle}>
+              Comprehensive Monitoring and Actionable Insights
+              </h3>
+              <div className={whyRowItems}>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon.src})` }}
+                  />
+                  <p className={whyRowText}>
+                  Access real-time building performance data through an intuitive dashboard
+                  </p>
+                </div>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
+                  />
+                  <p className={whyRowText}>
+                  Easily control thermostats and smart plugs from anywhere, anytime 
+                  </p>
+                </div>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon.src})` }}
+                  />
+                  <p className={whyRowText}>
+                  Receive proactive maintenance alerts to prevent issues before they impact operations
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className={whyRowImage}
+              style={{ backgroundImage: `url(${whyImg.src})` }}
+            />
+          </div>
+
+          <div className={whyRow + " flex-col-reverse"}>
+            <div
+              className={whyRowImage}
+              style={{ backgroundImage: `url(${whyImg.src})` }}
+            />
+            <div className={whyRowContent}>
+              <h3 className={whyRowTitle}>
+              Scalable and Future-Proof Solution
+              </h3>
+              <div className={whyRowItems}>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon.src})` }}
+                  />
+                  <div className={whyRowText}>
+                  Flexible and modular solution that adapts to your office space, single floor, or entire building
                   </div>
                 </div>
                 <div className={whyRowItem}>
@@ -254,7 +248,16 @@ export default function PageWhy() {
                     style={{ backgroundImage: `url(${whyIcon2.src})` }}
                   />
                   <div className={whyRowText}>
-                  With Bliss, you can enjoy the benefits of a smart building solution without having to invest in expensive infrastructure or hire specialized staff, allowing you to focus on your core business while we handle the rest.
+                  Start small and expand as needed, growing with your business
+                  </div>
+                </div>
+                <div className={whyRowItem}>
+                  <div
+                    className={whyRowItemImage}
+                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
+                  />
+                  <div className={whyRowText}>
+                  Regular Over-the-Air (OTA) updates ensure continuous performance enhancement and regulatory compliance, 
                   </div>
                 </div>
               </div>
