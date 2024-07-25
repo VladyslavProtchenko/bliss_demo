@@ -18,23 +18,16 @@ export default function PageMain() {
       <div className={wrapper}>
         <div className={mainContent}>
           <h1 className={mainTitle}>
-            Transform Your Building: Boost Efficiency, Comfort, and Your Bottom Line
+            Eliminate Hidden Energy Waste and CO2 Emissions in Your Buildings
           </h1>
           <p className={mainText}>
-           Bliss is an intelligent building energy optimization solution that cuts costs, boosts tenant satisfaction, and simplifies building operations – without breaking the bank. Tailored for small and medium-sized commercial buildings, Bliss delivers advanced technology without the complexity or high price tag.          </p>
-          <p className={mainText2}>
+            Notch offers intelligent power management devices that actively reduce your plug load energy consumption, a major contributor to Scope 2 emissions. Our devices use machine learning to optimize power delivery, eliminating standby drain and cutting both energy costs and carbon footprint.
           </p>
           <div className={mainButtons}>
-            <Button title="Order a Starter Kit" type="orange" onClick={() => {}} />
-            <Button
-              title="Book a Demo"
-              type="light"
-              onClick={() => {}}
-            />
+            <Button title="Order Your Starter Kit" type="orange" onClick={() => {}} />
+            <Button title="Book a Demo" type="light"  onClick={() => window.open('https://calendly.com/notch-energy/exploring-notch?primary_color=e94234&month=2024-07', '_blank')} />
           </div>
         </div>
-        
-
       </div>
     </section>
   );
@@ -47,6 +40,5 @@ const blurBg = "lg:block hidden absolute  -top-10 -left-10  -bottom-10 xl:w-[60%
 const blurBg2 = "lg:hidden absolute  -top-10 -left-20 -right-40  h-[80%] w-[150%] blur-[50px] bg-green";
 const mainTitle = "text-[38px] z-10 text-bgLight font-medium mb-[30px] leading-[46px]";
 const mainText = "text-[20px] z-10 font-thin text-white mb-[30px] leading-[26px] ";
-const mainText2 =  "text-[20px] z-10 font-thin text-white mb-[60px] leading-[26px] ";
 const mainButtons =  "gap-[30px] flex sm:items-start items-stetch flex-col sm:flex-row";
 

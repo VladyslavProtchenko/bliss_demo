@@ -4,7 +4,7 @@ import useOnclickOutside from "react-cool-onclickoutside";
 import { GoChevronDown, GoChevronUp } from "react-icons/go";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import logoImage from '../../../../public/assets/Logo.png'
+import logoImage from '../../../../public/assets/BlissLogoBlack.png'
 import Button from '../button';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -30,9 +30,9 @@ export default function Header() {
     return (
       <header className={header}>
         <div className={wrapper}>
-          <Image alt='Bliss logo' width='52' height='28' src={logoImage} className='cursor-pointer'/>
+          <Image alt='Bliss logo' width='99' height='99' src={logoImage} className='cursor-pointer'/>
 
-          <div className={menu}>
+          {/* <div className={menu}>
               <div className={nemuItem} ref={ref} onClick={()=>setOpen(!open)}>
                 Solution
                 {open ? <GoChevronUp /> :<GoChevronDown />}
@@ -60,11 +60,11 @@ export default function Header() {
 
 
             <Link href='/' className={nemuItem}>Resourses</Link>
-          </div>
+          </div> */}
           
           <nav className={buttons}>
-            <Button type='outline' title='Sign In' onClick={()=>console.log('Sign In')} className='px-[36px] py-[10px]'/>
-            <Button type='orange' title='Book a Demo' onClick={()=>console.log('Book a Demo')} className='px-[36px] py-[10px]'/>
+            {/* <Button type='outline' title='Sign In' onClick={()=>console.log('Sign In')} className='px-[36px] py-[10px]'/> */}
+            <Button type='orange' title='Book a Demo'onClick={() => window.open('https://calendly.com/notch-energy/exploring-notch?primary_color=e94234&month=2024-07', '_blank')} className='px-[36px] py-[10px]'/>
           </nav>
           <RxHamburgerMenu className='text-[48px] md:hidden'/>
         </div>

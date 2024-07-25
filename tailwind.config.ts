@@ -22,6 +22,7 @@ const config: Config = {
       colors: {
         transparent: "transparent",
         orange: "#E94234",
+        light: '#E6E6E6',
         current: "currentColor",
         bgLight: "#F4F4F4",
         bgDark: "#E0E0E0",

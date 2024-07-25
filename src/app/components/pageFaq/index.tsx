@@ -4,30 +4,38 @@ import { useState } from "react";
 
 const faqMenuItems = [
   {
-    title: "What makes Bliss different from other smart building solutions?",
-    content: "Bliss is specifically designed to address the unique needs and challenges of small and medium-sized buildings, offering a wireless, easy-to-install, and affordable solution that combines advanced sensor technology, intelligent automation, and user-friendly controls, making it the perfect choice for building owners and managers looking to optimize their building's performance without breaking the bank.",
+    title: "How does notch’s AI optimize energy consumption?",
+    content: "Our AI learns device usage patterns and automatically cuts power to idle devices. It continuously refines its strategies to maximize savings without affecting productivity.",
   },
   {
-    title: "How difficult is it to install and set up Bliss in my building?",
-    content: "Bliss is designed for simple, plug-and-play installation, with wireless sensors and controls that require no complex wiring or infrastructure changes. ",
+    title: "What makes notch’s connectivity more secure than standard Wi-Fi?",
+    content: "notch uses a dedicated network separate from your IT infrastructure, reducing cyber attack risks. All data is encrypted end-to-end for maximum security.",
   },
   {
-    title: "How does Bliss ensure optimal comfort for my building's occupants?",
-    content: "Bliss continuously monitors your building's environment, including temperature, humidity, air quality, and occupancy levels, and automatically adjusts your HVAC system to maintain optimal comfort based on your building's unique patterns and preferences, ensuring that your tenants or employees are always comfortable and productive.",
+    title: "How does notch adapt to different office layouts and equipment types?",
+    content: "Notch's AI learns the unique patterns of each space and device it manages. Whether it's an open-plan office, meeting rooms, or pantry, our system cuts energy waste based on device type and actual usage patterns. This adaptability ensures effective energy waste reduction across diverse office environments.",
+  },
+  {
+    title: "What level of energy data granularity does notch provide?",
+    content: "notch delivers real-time, device-level energy data. You can view consumption by individual outlet, device type, room, floor, or entire building.",
   },
 ];
 const faqMenuItems2 = [
   {
-    title: "Can Bliss scale to meet my building's changing needs?",
-    content: "Absolutely! Bliss offers a modular and expandable solution that can easily grow with your needs, whether you're managing a single building or a portfolio of properties.",
+    title: "How does notch ensure data privacy?",
+    content: "We process data locally where possible and use encryption for all transmissions. Our network is separate from your IT infrastructure, enhancing data privacy.",
   },
   {
-    title: "Is Bliss suitable for all types of HVAC systems?",
-    content: "Currently, Bliss is specifically designed to work seamlessly with Rooftop Units (RTUs)",
+    title: "Can notch help with regulatory compliance and sustainability reporting?",
+    content: "Yes. notch provides detailed energy and emissions data compatible with major reporting frameworks like GRI, CDP, and TCFD. This supports accurate Scope 2 emissions reporting.",
   },
   {
-    title: "Do we need a Building Management System (BMS) to install Bliss?",
-    content: "No! Bliss is the perfect solution for buildings without a BMS, as it provides a standalone, all-in-one system for monitoring and optimizing your building's performance.",
+    title: "What's the typical Return on Investment (ROI) for a notch installation?",
+    content: "For a typical 100,000 sq ft office in Singapore, you can save up to $46,000 on annual energy costs and about $1,700 on carbon tax. Most clients see full ROI within 12-18 months.",
+  },
+  {
+    title: "How easy is it to install and maintain notch devices?",
+    content: "For a typical 100,000 sq ft office in Singapore, you can save up to $40,000-$ 50,000 on annual energy costs and about $1,700 on carbon tax. Your return on initial hardware purchase is typically around 9-12 months.",
   },
 ];
 
@@ -37,11 +45,13 @@ export default function PageFaq() {
     0: false,
     1: false,
     2: false,
+    3: false,
   }); 
   const [menu2, setMenu2] = useState<{ [key: number]: boolean }>({
     0: false,
     1: false,
     2: false,
+    3: false,
   });
   return (
       <section className={faq}>
@@ -93,15 +103,15 @@ export default function PageFaq() {
 }
 
 const faq = " max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px] w-full";
-const faqTitle = "text-gray text-[40px] w-full text-start mb-[40px]";
+const faqTitle = "text-gray text-[18px] leading-[24px] w-full text-start mb-[40px]";
 const faqMenu =
   "flex w-full md:w-[48%] flex-col border-b-[1px] border-[#333] md:mb-[30px]";
 const faqMenuItem =
-  "flex  flex-col py-[26px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
+  "flex mih-h-[86px] flex-col py-[20px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
 
 
 const problemMenuItemHeader = "flex justify-between items-start";
 
-const problemMenuTitle = "text-[18px]";
+const problemMenuTitle = "text-[18px] w-[90%]";
 const problemMenuText = "text-[18px] font-thin pr-10";
 

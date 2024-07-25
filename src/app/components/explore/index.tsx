@@ -1,73 +1,38 @@
 "use client";
 import Image from "next/image";
-import { IoArrowForward } from "react-icons/io5";
-import bgImage from '../../../../public/assets/exploreCardBg.png'
-import bgImageM from '../../../../public/assets/phoneMobile.png'
-import bgImage2 from '../../../../public/assets/exloreCardBg2.png'
-import bgImage2M from '../../../../public/assets/watchMobile.png'
+import image from '../../../../public/assets/exploreimage1.png'
+import image2 from '../../../../public/assets/exploreimage2.png'
+import image3 from '../../../../public/assets/exploreimage3.png'
+import image4 from "../../../../public/assets/featuresImage.svg";
+
+const cards =[
+  {image: image, w:1900, h:1900, title: 'notchPlug', text: 'Single-outlet device powered by machine learning to identify connected devices, learn usage and cut power when not needed.'},
+  {image: image2, w:1900, h:1900, title: 'notchStrip', text: 'Multi-outlet device that intelligently manages several connected devices, reducing energy waste during idle times.'},
+  {image: image3, w:1900, h:1900, title: 'notchGateway', text: 'Central unit that coordinates all Notch devices, analyzes building-wide energy use, and sends data to Notch Hub.'},
+  {image: image4, w:6000, h:3375, title: 'notchHub', text: 'Central dashboard that collects data from all Notch devices, displays real-time energy use and savings, and reports emission savings to carbon accounting platforms.'},
+]
+
 
 export default function ExplorePage() {
   return (
       <section className={discover}>
         <div className={wrapper}>
-          <h1 className={title}>Intelligent Building Management, Simplified</h1>
-          <div className='flex flex-col xl:flex-row gap-10 mb-10'>
-            <div className={card1}>
-              <div className={content}>
-                <Image alt='background image' src={bgImage} width={1844} height={2896} className={img}/>
-                <Image alt='background image' src={bgImageM} width={1844} height={2896} className={imgM}/>
-                <h2 className={cardTitle}>Bliss Sense</h2>
-                <p className={cardText}>Privacy-preserving environmental and occupancy sensor with an intuitive occupant comfort feedback interface.</p>
-                <hr  className='my-[22px] opacity-50'/>
-                <p className={listItem}>- Monitors temperature, humidity, air quality, CO2 levels, and occupancy with precision</p>
-                <p className={listItem}>- Features an intuitive e-ink display for instant occupant feedback</p>
-                <p className={listItem}>- Powered by built-in solar cells for maintenance-free operation</p>
+          <h1 className={title}>Our Devices and Software: Powered by Machine Learning</h1>
+
+          <div className='flex w-full flex-wrap justify-between '>
+            {
+              cards.map(item =>(
+                <div className={card} key={item.title}>
+                <div className={content}>
+                  <h2 className={cardTitle}>{item.title}</h2>
+                  <p className={cardText}>{item.text}</p>
+                  <div className='flex items-center justify-center h-[320px] overflow-hidden rounded-2xl'>
+                    <Image alt='background image' src={item.image.src} width={item.w} height={item.h} />
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div className={card1}>
-              <div className={content}>
-                <Image alt='background image' src={bgImage} width={1844} height={2896} className={img}/>
-                <Image alt='background image' src={bgImageM} width={1844} height={2896} className={imgM}/>
-                <h2 className={cardTitle}>Smart Energy Controls</h2>
-                <p className={cardText}>Connected Thermostat and Smart Plugs for efficient HVAC and equipment management.</p>
-                <hr  className='my-[22px] opacity-50'/>
-                <p className={listItem}>- WiFi-enabled smart thermostat for HVAC system integration</p>
-                <p className={listItem}>- Smart plugs for efficiently managing plug loads of office equipment</p>
-                <p className={listItem}>- Thermostat maintains familiar interface for manual temperature adjustments</p>
-              </div>
-            </div>
-
-
-          </div>
-
-          <div className='flex flex-col xl:flex-row gap-10 mb-10'>
-            <div className={card1}>
-              <Image alt='background image' src={bgImage} width={1844} height={2896} className={img}/>
-              <Image alt='background image' src={bgImageM} width={1844} height={2896} className={imgM}/>
-              <div className={content}>
-                <h2 className={cardTitle}>Bliss Connect</h2>
-                <p className={cardText}>A compact gateway orchestrating a network for intelligent building optimization and secured data transfer to the cloud.</p>
-                <hr  className='my-[22px] opacity-50'/>
-                <p className={listItem}>- Processes data on-site for instant, autonomous responses</p>
-                <p className={listItem}>- Learns and adapts to your building&apos;s unique patterns over time</p>
-                <p className={listItem}>- Enables intelligent decision-making at the edge</p>
-              </div>
-            </div>
-
-            <div className={card1}>
-              <Image alt='background image' src={bgImage} width={1844} height={2896} className={img}/>
-              <Image alt='background image' src={bgImageM} width={1844} height={2896} className={imgM}/>
-              <div className={content}>
-                <h2 className={cardTitle}>Bliss Hub</h2>
-                <p className={cardText}>Centralized platform for remote energy monitoring, control, and performance insights.</p>
-                <hr  className='my-[22px] opacity-50'/>
-                <p className={listItem}>- Provides a clear, real-time overview of your building&lsquo;s performance </p>
-                <p className={listItem}>- Enables remote control and monitoring from any device</p>
-                <p className={listItem}>- Generates insightful reports to drive informed decision-making</p>
-
-              </div>
-            </div>
+              ))
+            }
           </div>
         </div>
       </section>
@@ -76,12 +41,9 @@ export default function ExplorePage() {
 
 const discover = "flex w-full justify-center bg-bgDark";
 const wrapper = 'w-full px-[30px] md:px-[60px] lg:px-[100px] py-[100px] max-w-[1440px]'
-const card1 = "relative w-full xl:w-1/2 overflow-hidden bg-white py-[50px] px-[40px] rounded-[30px] hover:shadow-2xl cursor-pointer";
-const cardTitle = "text-[40px] mb-[22px] text-gray flex items-center gap-5";
-const cardText = "text-gray text-[16px] leading-[22px] font-thin "
-const listItem = "text-gray  lg:w-[90%] text-[16px] leading-[22px] font-thin pr-[80px] lg:pr-[20px]"
-const img = "hidden md:flex absolute bottom-0 -right-10  w-full max-w-[461px]";
-const imgM = "flex md:hidden absolute  bottom-0 right-0  w-full max-w-[230px]";
-const content = "w-full md:w-[60%] lg:w-[80%]  h-full flex flex-col"
+const card = "flex w-[600px] mb-10  bg-white pt-[50px] pb-[35px] px-[46px] rounded-[30px] hover:shadow-2xl cursor-pointer";
+const cardTitle = "text-[42px] mb-[22px] text-gray";
+const cardText = "text-gray text-[16px] mb-5 leading-[22px] font-thin w-full"
+const content = "w-full  h-full flex flex-col"
 
 const title = "text-[40px] text-gray text-center mb-[60px]" 

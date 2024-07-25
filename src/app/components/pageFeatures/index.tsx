@@ -1,31 +1,32 @@
 "use client";
 import { useRef, useState } from "react";
-import sliderImg from "../../../../public/assets/sliderImg.png";
+import image from "../../../../public/assets/featuresImage.svg";
 import Slider from 'react-slick';
+import Image from "next/image";
 
 const featuresTabs: string[] = [
-  "Automated Energy Savings",
-  "Bliss Actions",
-  "Occupant-Centric Comfort",
-  "Remote Management",
+  "AI-Powered Optimizations",
+  "Real-Time Energy Monitoring",
+  "Secure Connectivity",
+  "Scalable Energy Management",
 ];
 
 const featuresCards: {title:string, text:string}[] = [
   {
-    title:"Effortless and Automatic Energy Efficiency with Advanced Machine Learning", 
-    text:"At the heart of Bliss is a powerful machine learning engine that continuously analyzes your building's data to identify opportunities for optimization. By making intelligent, real-time decisions, Bliss automatically adjusts your HVAC system, lighting, and plug loads to reduce energy waste and maintain optimal comfort. With Bliss, your building becomes a smarter, more efficient version of itself."
+    title:"Harness Machine Learning for Automatic Energy Savings", 
+    text:"Our machine learning algorithms that run on every notch device analyze device usage patterns to automatically optimize energy consumption. By predicting needs and eliminating waste, this AI-driven approach can reduce plug load energy use by up to 30% and emission by up to 15%."
   },
   {
-    title:"Automated Energy Optimization for Maximum Savings", 
-    text:"Bliss takes energy efficiency to new heights with its intelligent Bliss Efficiency Actions. By continuously analyzing data, occupant feedback, and usage patterns, Bliss identifies opportunities for energy savings and automatically takes action to optimize performance. From adjusting HVAC setpoints and turning off unused lights and equipment, to intelligently managing plug loads, Bliss Efficiency Actions work tirelessly to reduce waste and maximize your energy savings."
+    title:"Granular Insights into Every Connected Device", 
+    text:"notchHub provides a comprehensive, real-time view of your organization's energy consumption patterns. This granular information translates directly to CO2 emissions data, offering a clear picture of the Scope 2 carbon footprint from devices and appliances in your offices. The detailed insights support precise sustainability reporting and help quantify progress towards carbon reduction goals, all without requiring constant manual analysis or intervention."
   },
   {
-    title:"Prioritize Comfort and Well-Being with Occupant Feedback", 
-    text:"Bliss puts the comfort and well-being of your building's occupants at the forefront. By actively seeking feedback through the Bliss Sense device and continuously monitoring environmental conditions, our system creates a personalized and responsive environment that adapts to the unique needs and preferences of each individual. Occupants can easily express their comfort levels and preferences, while also accessing real-time information on indoor environmental quality."
+    title:"Enterprise-Grade Security for your Infrastructure and Data", 
+    text:"Notch devices are connected in a dedicated, non-cellular 5G network separate from your IT infrastructure. Data processing and machine learning run locally on devices and gateway, with only anonymized data transmitted through our secure private cloud. The notchHub accesses this data via encrypted APIs, maintaining separation between our platform and your infrastructure. This architecture guarantees robust security, privacy, and seamless integration with your systems."
   },
   {
-    title:"Seamless Control and Insights From Anywhere", 
-    text:"With Bliss, you have the power to monitor and manage your building's performance from anywhere, at any time. The intuitive, user-friendly dashboard provides real-time insights, smart alerts, and comprehensive reporting, empowering you to make data-driven decisions that enhance comfort, efficiency, and sustainability. Whether you need to troubleshoot issues or schedule maintenance, Bliss allows you to do it all remotely, saving you time and resources."
+    title:"From Single Floor to Entire Building Portfolios", 
+    text:"notch technology scales effortlessly to match your organization's growth and evolving sustainability goals. Start with a single floor or deploy across your entire real estate portfolio – our system adapts seamlessly. The centralized notchHub integrates new devices instantly, allowing you to expand your energy waste reduction efforts as needed.across your office buildings worldwide."
   },
 ];
 export default function PageFeatures() {
@@ -36,7 +37,7 @@ export default function PageFeatures() {
 
       <section className={features}>
         <div className={wrapper}>
-          <h1 className={featuresTitle}>Your Intelligent Building Energy Optimization Solution</h1>
+          <h1 className={featuresTitle}>notch: Cutting-Edge Climate Tech for Sustainable Buildings</h1>
           <div className={featuresSlider}>
             {featuresTabs.map((item, index) => (
               <span
@@ -70,9 +71,11 @@ export default function PageFeatures() {
                   {item.text}
                 </div>
               </div>
-              <img
+              <Image
+                width='615'
+                height='394'
                 alt="image of office"
-                src={sliderImg.src}
+                src={image.src}
                 className={featureSlideImage}
               />
             </div>

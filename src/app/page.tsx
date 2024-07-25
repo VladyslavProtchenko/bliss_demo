@@ -1,16 +1,13 @@
-"use client";
-
-import PageSolutions from "./components/PageSolutions";
 import PageDiscover from "./components/pageDiscover";
 import PageFaq from "./components/pageFaq";
 import PageFeatures from "./components/pageFeatures";
 import PageHow from "./components/pageHow";
 import PageMain from "./components/pageMain";
-import PagePricing from "./components/pagePricing";
 import PageProblems from "./components/pageProblems";
-import PageStatistic from "./components/pageStatistic";
 import PageWhy from "./components/pageWhy";
 import ExplorePage from "./components/explore";
+import Integrations from "@components/integrationSection/Integration";
+import Choose from "@components/choose/Choose";
 export default function Home() {
 
   return (
@@ -20,10 +17,10 @@ export default function Home() {
       <ExplorePage />
       <PageFeatures />
       <PageWhy />
-      <PageDiscover />
-      <PagePricing />
       <PageHow />
-      <PageStatistic />
+      <PageDiscover />
+      <Integrations />
+      <Choose />
       <PageFaq />
     </main>
   );

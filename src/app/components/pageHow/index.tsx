@@ -1,14 +1,14 @@
 "use client";
-import Button from "./../../components/button";
-import howImg from "../../../../public/assets/howImg.png";
+import Image from "next/image";
+import image from "../../../../public/assets/howItWorks.png";
 import { useEffect, useRef, useState } from "react";
 
 const slides = [
-  {title:'Easy Installation', text:'Bliss kit with clearly labelled and commissioned devices and a customized installation guide for a quick and hassle-free setup.'},
-  {title:'Intelligent Monitoring', text:'Bliss continuously monitors your building\'s occupancy, temperature, air quality, and energy use through its advanced sensors.'},
-  {title:'Automated Optimization (with Bliss Genius Pro plan)', text: 'The system\'s intelligent algorithms analyze data in real-time, automatically adjusting HVAC, lighting, and plug loads for optimal comfort and efficiency.'},
-  {title:'Actionable Insights', text:'The Bliss Hub web app provides a user-friendly dashboard with real-time data, insights, and recommendations for improving performance'},
-  {title:'Continuous Savings', text:'By constantly adapting to your building\'s unique needs, Bliss helps you save on utility bills and maintenance costs while enhancing occupant satisfaction.'},
+  {title:'Plug and Play', text:'Once plugged in, notch devices automatically connect, identify appliance types, and begin tracking individual energy consumption patterns.'},
+  {title:'AI-Powered Waste Elimination', text:'Our machine learning algorithms continuously analyze usage data, automatically implementing targeted energy-saving actions to cut unnecessary consumption.'},
+  {title:'Automated Carbon Tracking', text: 'notch software converts real-time energy data into accurate carbon emissions metrics, providing a clear, up-to-the-minute picture of your plug load carbon footprint.'},
+  {title:'Seamless Emissions Reporting', text:'Our API integrates directly with your carbon accounting software, streamlining Scope 2 emissions reporting and accelerating progress towards your net-zero goals.'},
+  // {title:'Continuous Savings', text:'By constantly adapting to your building\'s unique needs, Bliss helps you save on utility bills and maintenance costs while enhancing occupant satisfaction.'},
 ]
 
 export default function PageHow() {
@@ -21,7 +21,7 @@ export default function PageHow() {
       const container = containerRef.current;
       if (container) {
         const scrollTop = container.scrollTop;
-        const itemHeight = container.scrollHeight / 7; 
+        const itemHeight = container.scrollHeight / 5; 
         const newIndex = Math.floor(scrollTop / itemHeight);
         setSelectedItem(newIndex+1);
       }
@@ -43,7 +43,7 @@ export default function PageHow() {
         <div className={wrapper}>
 
           <div className={howWorksContent}>
-            <h2 className={howWorksTitle}>How Bliss Works</h2>
+            <h2 className={howWorksTitle}>How it works</h2>
             <div ref={containerRef} className={howWorksMenu}>
               {slides.map((item, index)=>(
                 <div className={
@@ -65,7 +65,9 @@ export default function PageHow() {
               <div className='py-[50px] w-full'></div>
             </div>
           </div>
-          <img src={howImg.src} alt="office photo" className={howWorksImage} />
+          <div className='w-full lg:w-1/2 max-h-[300px] md:max-h-[450px] rounded-xl flex items-center overflow-hidden'>
+            <Image src={image.src} width='3928' height='4590' alt="office photo" />
+          </div>
           <h2 className={howWorksTitle2}>How Bliss Works</h2>
         </div>
       </section>
@@ -86,7 +88,5 @@ const howWorksNumber = "text-[36px] text-gray mr-[20px]";
 const howWorksItemContent = "px-[18px] py-[14px] border-bgDark border-l-[4px] ";
 const howWorksItemTitle = "text-[16] font-bold";
 const howWorksItemText = "text-[16px] leading-[22px] font-thin";
-const howWorksImage =
-  "bg-cover w-full bg-no-repeat  max-h-[300px] md:max-h-[450px] lg:max-w-[1000px] rounded-xl lg:w-1/2 ";
 
 

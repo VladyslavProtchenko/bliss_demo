@@ -1,267 +1,134 @@
+'use client'
+import Image from "next/image";
+import { BsPlusLg } from "react-icons/bs";
+import { HiMinus } from "react-icons/hi2";
 
-import whyIcon from "../../../../public/assets/whyIcon.png";
-import whyIcon2 from "../../../../public/assets/whyIcon2.png";
-import whyImg from "../../../../public/assets/whyImg.png";
+import img1 from '../../../../public/assets/whyImage1.png'
+import img2 from '../../../../public/assets/whyImage2.png'
+import img3 from '../../../../public/assets/whyImage3.png'
+
+import img4 from '../../../../public/assets/whyImage4.png'
+import img5 from '../../../../public/assets/whyImage5.png'
+import img6 from '../../../../public/assets/whyImage6.png'
+import img7 from '../../../../public/assets/whyImage7.png'
+import img8 from '../../../../public/assets/whyImage8.png'
+import img9 from '../../../../public/assets/whyImage9.png'
+import img10 from '../../../../public/assets/whyImage10.png'
+import img11 from '../../../../public/assets/whyImage11.png'
+import img12 from '../../../../public/assets/whyImage12.png'
+import img13 from '../../../../public/assets/whyImage13.png'
+import img14 from '../../../../public/assets/whyImage14.png'
+import img15 from '../../../../public/assets/whyImage15.png'
+import img16 from '../../../../public/assets/whyImage16.png'
+import img17 from '../../../../public/assets/whyImage17.png'
+import img18 from '../../../../public/assets/whyImage18.png'
+import { useState } from "react";
+import { cn } from "@/lib/cn";
+
+const cards = [
+  {
+    title: 'Context-Aware Energy Optimization',
+    img1: img1,
+    img2: img2,
+    img3: img3,
+    text1: 'AI learns usage patterns to forecast and optimize power consumption',
+    text2: 'Dynamically adjusts power based on real-time occupancy and schedules',
+    text3: 'Eliminates phantom loads from standby devices',
+  },
+  {
+    title: 'Streamlined Carbon Accounting',
+    img1: img4,
+    img2: img5,
+    img3: img6,
+    text1: 'Automatic, real-time data feed to your carbon management platform',
+    text2: 'Precise quantification of Scope 2 emissions reductions',
+    text3: 'Accelerates progress towards science-based targets and net-zero goals',
+  },
+  {
+    title: 'Real-Time Intelligence and Remote Management',
+    img1: img7,
+    img2: img8,
+    img3: img9,
+    text1: 'Comprehensive energy consumption data across all connected devices',
+    text2: 'Intuitive dashboard for easy monitoring and control',
+    text3: 'Continuous analysis identifies further optimization opportunities',
+  },
+  {
+    title: 'True Plug-and-Play Solution',
+    img1: img10,
+    img2: img11,
+    img3: img12,
+    text1: 'No alterations to existing infrastructure required',
+    text2: 'Simple installation process, no specialized IT staff needed',
+    text3: 'Compatible with standard office equipment and appliances',
+  },
+  {
+    title: 'Enterprise-Grade Security',
+    img1: img13,
+    img2: img14,
+    img3: img15,
+    text1: 'Dedicated on-premise network separate from your IT infrastructure',
+    text2: 'End-to-end encryption ensures data integrity',
+    text3: 'Complies with industry-standard security protocols',
+  },
+  {
+    title: 'Clear Return on Investment',
+    img1: img16,
+    img2: img17,
+    img3: img18,
+    text1: 'Solution typically pays for itself through energy savings',
+    text2: 'Improves energy efficiency metrics for green building certifications',
+    text3: 'Provides quantifiable emissions reduction for sustainability reporting',
+  },
+]
 
 export default function PageWhy() {
+  const [card, setCard] = useState<{[key:number]:boolean}>({
+    0: false,
+    1: false,
+    2: false,
+    3: false,
+    4: false,
+    5: false,
+    6: false,
+  })
+
   return (
       <section className={why}>
         <div className={wrapper}>
           <h2 className={whyTitle}>
-            Effortless Energy Optimization for Small and Medium-Sized Buildings
-            
+            Streamlined <span className='text-red-500'>Energy Waste</span> Elimination for <span className='text-red-500'>Modern Workplaces</span>
           </h2>
           <p className={whyText}>
-          Discover how Bliss empowers you to delivers automated energy savings , enhance occupant comfort, and simplify building management User-friendly app allows tenants to report comfort levels for immediate adjustments
+            Discover how notch technology automates energy savings, enhances sustainability reporting, and simplifies plug load power management
           </p>
+          <div className="flex flex-wrap justify-between items-start">
+              {cards.map((item, index) =>(
+                <div className={cn("w-full md:w-[49%] lg:w-[32%] flex flex-col  bg-white rounded-[40px] p-10 mb-10",)}  key={item.title}>
+                  <div onClick={()=>setCard({...card, [index]:!card[index]})}  className={cn('size-10 rounded-full bg-bgDark flex items-center justify-center mb-10 cursor-pointer',{ 'bg-red-300': card[index]})}>
+                    {card[index] 
+                      ? <HiMinus className='text-2xl font-thin text-red-500'/>
+                      : <BsPlusLg className='text-2xl font-thin '/>
+                    }
+                  </div>
+                  <h2 className='text-[24px] leading-[28px]'>{item.title}</h2>
 
-          <div className={whyRow}>
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-              Intelligent Automation for Optimal Comfort and Efficiency
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <div className={whyRowText}>
-                    Machine learning driven system optimizes HVAC and plug loads, cutting energy costs by up to 30%
+                  <div className={cn("pt-10 gap-[30px] hidden flex-col", {' flex ': card[index]})}>
+                    <div className=" flex items-center gap-[10px]">
+                      <Image width={48} height={48} alt='item icon' src={item.img1.src}></Image>
+                      <p className='text-[18px] leading-[22px] font-thin'>{item.text2}</p>
+                    </div>
+                    <div className=" flex items-center gap-[10px]">
+                      <Image width={48} height={48} alt='item icon2' src={item.img2.src}></Image>
+                      <p className='text-[18px] leading-[22px] font-thin'>{item.text2}</p>
+                    </div>
+                    <div className=" flex items-center gap-[10px]">
+                      <Image width={48} height={48} alt='item icon3' src={item.img3.src}></Image>
+                      <p className='text-[18px] leading-[22px] font-thin'>{item.text3}</p>
+                    </div>
                   </div>
                 </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <p className={whyRowText}>
-                    Intelligently manages heating, cooling based on occupancy, weather, and energy prices
-                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <p className={whyRowText}>
-                    Automatically turns of unused power outlets to reduce energy waste
-                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <p className={whyRowText}>
-                    Improves tenant comfort while reducing carbon footprint and operating costs
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-          </div>
-
-          <div className={whyRow + " flex-col-reverse"}>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-              Affordable and Accessible for Small and Medium-Sized Buildings
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <div className={whyRowText}>
-                    Transform your property with enterprise-level IoT technology at a fraction of traditional costs
-                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <div className={whyRowText}>
-                  Solution pays for itself through energy savings, thanks to our innovative pricing model                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <div className={whyRowText}>
-                  No expensive infrastructure overhauls or specialized staff needed                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={whyRow}>
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-              Occupant-Centric Comfort and Context-Aware Optimization
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  Bliss Sense devices feature intuitive e-ink displays for instant occupant comfort feedback                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  Privacy-preserving occupancy detection optimizes comfort and space utilization without compromising individual privacy                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  System continuously adapts to occupant preferences, improving comfort and satisfaction                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-          </div>
-
-          <div className={whyRow + " flex-col-reverse"}>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-              Wireless Simplicity and Rapid Installation**
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <div className={whyRowText}>
-                  True plug-and-play setup with pre-commissioned, clearly labeled devices                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <div className={whyRowText}>
-                  Customized installation guide designed for your specific office space or building
-                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <div className={whyRowText}>
-                  Zero disruption with quick, user-friendly installation process
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={whyRow}>
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-              Comprehensive Monitoring and Actionable Insights
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  Access real-time building performance data through an intuitive dashboard
-                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  Easily control thermostats and smart plugs from anywhere, anytime 
-                  </p>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <p className={whyRowText}>
-                  Receive proactive maintenance alerts to prevent issues before they impact operations
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-          </div>
-
-          <div className={whyRow + " flex-col-reverse"}>
-            <div
-              className={whyRowImage}
-              style={{ backgroundImage: `url(${whyImg.src})` }}
-            />
-            <div className={whyRowContent}>
-              <h3 className={whyRowTitle}>
-              Scalable and Future-Proof Solution
-              </h3>
-              <div className={whyRowItems}>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon.src})` }}
-                  />
-                  <div className={whyRowText}>
-                  Flexible and modular solution that adapts to your office space, single floor, or entire building
-                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <div className={whyRowText}>
-                  Start small and expand as needed, growing with your business
-                  </div>
-                </div>
-                <div className={whyRowItem}>
-                  <div
-                    className={whyRowItemImage}
-                    style={{ backgroundImage: `url(${whyIcon2.src})` }}
-                  />
-                  <div className={whyRowText}>
-                  Regular Over-the-Air (OTA) updates ensure continuous performance enhancement and regulatory compliance, 
-                  </div>
-                </div>
-              </div>
-            </div>
+              ))}
           </div>
         </div>
       </section>
@@ -270,9 +137,8 @@ export default function PageWhy() {
 const why =
   " bg-bgDark flex justify-center w-full";
 const wrapper = 'flex flex-col max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px]'
-const whyTitle = "text-gray text-[40px] w-full md:text-center mb-[28px]";
-const whyText =
-  "w-full md:w-[60%] mx-auto md:text-center text-[20px] mb-[60px] leading-[28px] font-thin";
+const whyTitle = "text-gray text-[40px] w-full  mb-[28px]";
+const whyText = "w-3/5  text-[20px] mb-[60px] leading-[28px] font-thin";
 const whyRow =
   "flex flex-col lg:flex-row w-full mb-[60px] justify-between items-center";
 const whyRowContent = "flex w-full lg:w-[40%] flex-col";

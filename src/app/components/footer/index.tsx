@@ -1,76 +1,57 @@
 'use client'
 import Image from "next/image";
-import logoImage from '../../../../public/assets/logoWhite.png';
-import phone from '../../../../public/assets/footerPhone.png';
-import mail from '../../../../public/assets/footerMail.png';
 import Button from "../button";
+import image from '../../../../public/assets/blissLogoRed.png'
 
 export default function Footer() {
   return (
     <footer className={footer}>
       <section className={container}>
-        <div className={row}>
-          <Image alt='Bliss logo' width='70' height='35' src={logoImage} />
-          <Button type='orange' title='Request a Free Consultation' onClick={()=>console.log('Book a Demo')} className='px-[24px] py-[12px] font-bold'/>
-        </div>
-        <div className={content}>
-          <div className={coll}>
-            <h2 className={mainText}>
-              Bliss is lorem ipsum dolor sit amet consectetur. Porta lectus velit sed vitae lectus sagittis malesuada. Phasellus dignissim viverra in vel adipiscing habitasse. 
-            </h2>
+        <div className='flex lg:px-[50px] mb-[96px] flex-col lg:flex-row '>
+          <div className='flex flex-col wfull lg:w-1/2 mb-10 lg:mb-0'>
+            <div className='w-full lg:w-[270px] mb-4'>
+              <h1 className='text-light text-[40px] leading-[48px]'>Do you have any questions?</h1>
+            </div>
+            <p className='text-light text-[16px] opacity-80 font-light mb-10'> Feel free to send us your questions or request a free consultation.</p>
+            <Button type='orange' title='Send a message' onClick={()=>console.log('Book a Demo')} className='self-start'/>
           </div>
-          <div className={coll}>
-            <div className="w-1/2">
-              <ul className={table}>
-                <li  className={tableHeader}>Solution</li>
-                <li className={tableItem}>Property Managers</li>
-                <li className={tableItem}>Hosts & Owners</li>
-              </ul>
-              <ul className={table}>
-                <li className={tableHeader}>Product</li>
-              </ul>
-            </div>
-            <div className="w-1/2">
-              <ul className={table}>
-                <li className={tableHeader}>Resources</li>
-                <li className={tableItem}>Help Center</li>
-                <li className={tableItem}>Installation</li>
-                <li className={tableItem}>Blog</li>
-                <li className={tableItem}>Success Stories</li>
-                <li className={tableItem}>Integrations</li>
-                <li className={tableItem}>Partners</li>
-                <li className={tableItem}>About Bliss</li>
-              </ul>
-            </div>
-          </div>
-          <div className={coll+' flex-col'}>
-            <h2 className='md:hidden text-[16px] mb-[30px]'>Contacts</h2>
-            <div className={contact}>
-              <Image alt='Bliss logo' width='40' height='40' src={phone} />
-              <p className={contactText}>+65 91301848</p>
+          <div className='flex flex-col w-full lg:w-1/2 justify-center '>
 
-            </div>
-            <div className={contact}>
-              <Image alt='Bliss logo' width='40' height='40' src={mail} />
-              <p className={contactText}>Dharani@Wattif.com</p>
-
+            <div className='text-light w-full lg:w-4/5 text-[16px] opacity-80 font-light relative'>
+              <div className='absolute border-orange w-[25px] border-2 rotate-[100deg] top-2 -left-6' />
+              Bliss is an intelligent building energy optimization and automation solution that cuts costs, boosts tenant satisfaction, and simplifies building operations.
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col  lg:flex-row justify-between lg:px-[50px] w-full">
+          <div className="flex w-full mb-10 lg:mb-0 lg:w-1/3 gap-10 lg:justify-between">
+
+            <div className="flex flex-col">
+              <div className="text-light font-[10px] opacity-60 mb-3">TELEPHONE</div>
+              <div className="text-light text-[14px]">+65 91301848</div>
+            </div>
+            <div className="div">
+              <div className="text-light font-[10px] opacity-60 mb-3">EMAIL</div>
+              <div className="text-light text-[14px]">Dharani@Wattif.com</div>
+            </div>
+
+          </div>
+
+          <div className="flex lg:flex-col items-center lg:items-end gap-10">
+            <Image src={image.src} width='104' height='41' alt='image' className='mr-auto lg:mr-none' />
+            <div className="text-light font-[12px] opacity-50 lg:mb-1 lg:text-end lg:mt-[10px]">Developed by Wattif Technologies</div>
+            <div className="text-light font-[12px] opacity-50 lg:text-end">© 2023 — Copyright</div>
+          </div>
+
+
+        </div>
+
       </section>
     </footer>
   )
 }
 
-const mainText = 'text-[16px] leading-[20px]  font-thin'
-const table = ' text-[16px] mb-[38px]'
-const tableHeader = 'mb-[20px] font-bold'
-const tableItem = 'mb-[10px] font-thin text-[16px]'
-const contact = 'flex gap-[20px] items-center mb-[30px]'
-const contactText = 'font-bold text-[18px]'
-const coll = 'flex w-full  md:w-[30%] text-white mb-[30px] md:mb-0'
-const content = 'flex flex-col md:flex-row justify-between'
 
-const row = 'flex w-full justify-between items-center pb-[40px] border-b-[0.5px] border-bgDark mb-[40px]'
-const container = 'max-w-[1440px] flex-col flex w-full h-full items-center justify-between px-[30px] md:px-[60px] lg:px-[100px] py-[60px] '
-const footer = ' w-full flex justify-center bg-green '
+const container = 'max-w-[1440px] flex-col flex w-full h-full  px-[30px] md:px-[60px] lg:px-[100px] py-[80px] '
+const footer = ' w-full flex justify-center bg-gray '
