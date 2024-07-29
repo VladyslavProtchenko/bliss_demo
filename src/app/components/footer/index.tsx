@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Button from "../button";
-import image from '../../../../public/assets/blissLogoRed.png'
+import image from '../../../../public/assets/LogoFooter.png'
 
 export default function Footer() {
   return (
@@ -38,10 +38,10 @@ export default function Footer() {
 
           </div>
 
-          <div className="flex lg:flex-col items-center lg:items-end gap-10">
-            <Image src={image.src} width='104' height='41' alt='image' className='mr-auto lg:mr-none' />
+          <div className="flex lg:flex-col items-center lg:items-end gap-10 md:gap-0">
+            <Image src={image.src} width='104' height='41' alt='image' className='mr-auto lg:mr-0' />
             <div className="text-light font-[12px] opacity-50 lg:mb-1 lg:text-end lg:mt-[10px]">Developed by Wattif Technologies</div>
-            <div className="text-light font-[12px] opacity-50 lg:text-end">© 2023 — Copyright</div>
+            <div className="text-light font-[12px] opacity-50 lg:text-end">© 2024 — Copyright</div>
           </div>
 
 

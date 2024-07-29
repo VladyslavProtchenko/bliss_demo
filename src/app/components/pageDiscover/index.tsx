@@ -8,30 +8,30 @@ export default function PageDiscover() {
         <div className={discoverCards}>
           <div className={discoverCard}>
 
-            <h3 className={discoverCardTitle}>Bliss Starter Kit</h3>
+            <h3 className={discoverCardTitle}>notch.Start</h3>
 
             <h4 className='text-[32px] text-[#333333] mb-[10px]'>$ 2499</h4>
-            <p className={discoverCardText}>You have 100 credits to put together the combination of notch devices you choose</p>
+            <p className={discoverCardText}>for 50 notchPlug devices <br /> Full credit towards enterprise rollout</p>
 
             <div className='text-[18px] mb-5'>What&apos;s Included:</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
-              <li>1 credits for a notchPlug</li>
-              <li>2 credits for a notchStrip</li>
-              <li>1 notch.Gateway (included)</li>
-            </ul>
-
-            <div className='text-[18px] mb-4'>What&apos;s Included:</div>
-            <ul className='mb-8 pl-4 list-disc text-gray'>
-              <li>100 Notch Smart Plugs</li>
+              <li>50 notch Plugs</li>
               <li>1 Notch Gateway</li>
-              <li>Full access to Notch Hub dashboard for 3 months</li>
+              <li>Full access to Notch Hub dashboard</li>
             </ul>
 
-            <div className='text-[18px] mb-5'>Perfect for:</div>
-            <ul className='mb-10 pl-4 list-disc text-gray'>
+            <div className='text-[18px] mb-4'>Perfect for:</div>
+            <ul className='mb-8 pl-4 list-disc text-gray'>
               <li>Piloting in a single office area</li>
               <li>Evaluating impact in a specific zone of a large facility</li>
               <li>Proof of concept for enterprise-wide deployment</li>
+            </ul>
+
+            <div className='text-[18px] mb-5'>Benefits::</div>
+            <ul className='mb-10 pl-4 list-disc text-gray'>
+              <li>Rapid proof of concept</li>
+              <li>Expert-guided implementation and support</li>
+              <li>Easily scalable - expand coverage as you see results</li>
             </ul>
 
 
@@ -53,14 +53,15 @@ export default function PageDiscover() {
 
             <div className='text-[18px] mb-4'>Enterprise-Wide Energy Waste Reduction</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
-              <li >Comprehensive plug load management across your entire portfolio</li>
-              <li>Real-time energy consumption tracking and analysis</li>
+              <li>Includes plugs, power strips, and relays for comprehensive plug load management across your entire portfolio</li>
+              <li>Includes Occupancy Sensors and Temperature Sensors (for vending machines)</li>
+              <li>Real-time energy consumption anc emission tracking and analysis</li>
               <li>Automated identification and elimination of energy waste</li>
             </ul>
 
             <div className='text-[18px] mb-4'>Pricing</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
-              <li >One-time hardware cost at cost price: notchPlug: $19.99, notchStrip: $49.99</li>
+              <li >One-time hardware cost</li>
               <li>Monthly software subscription: $2.49 per device</li>
               <li>Free access to the software for the first 6 months </li>
             </ul>

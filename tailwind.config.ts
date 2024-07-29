@@ -19,6 +19,10 @@ const config: Config = {
       backgroundImage: {
         'custom-bg': "url('/public/assets/MainBg.png')",
       },
+      backgroundPosition: {
+        'main': 'right 350px',
+        'mobile': 'right 400px'
+      },
       colors: {
         transparent: "transparent",
         orange: "#E94234",

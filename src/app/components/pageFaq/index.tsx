@@ -106,12 +106,10 @@ const faq = " max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px] w-fu
 const faqTitle = "text-gray text-[18px] leading-[24px] w-full text-start mb-[40px]";
 const faqMenu =
   "flex w-full md:w-[48%] flex-col border-b-[1px] border-[#333] md:mb-[30px]";
-const faqMenuItem =
-  "flex mih-h-[86px] flex-col py-[20px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
-
+const faqMenuItem = "flex mih-h-[86px] flex-col py-[20px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
 
 const problemMenuItemHeader = "flex justify-between items-start";
 
-const problemMenuTitle = "text-[18px] w-[90%]";
+const problemMenuTitle = "text-[18px] w-[90%] leading-[24px] color-gray";
 const problemMenuText = "text-[18px] font-thin pr-10";
 

@@ -104,7 +104,7 @@ export default function PageWhy() {
           </p>
           <div className="flex flex-wrap justify-between items-start">
               {cards.map((item, index) =>(
-                <div className={cn("w-full md:w-[49%] lg:w-[32%] flex flex-col  bg-white rounded-[40px] p-10 mb-10",)}  key={item.title}>
+                <div className={cn("w-full md:w-[49%] min-h-[220px] lg:w-[32%] flex flex-col  bg-white rounded-[40px] p-10 mb-10",)}  key={item.title}>
                   <div onClick={()=>setCard({...card, [index]:!card[index]})}  className={cn('size-10 rounded-full bg-bgDark flex items-center justify-center mb-10 cursor-pointer',{ 'bg-red-300': card[index]})}>
                     {card[index] 
                       ? <HiMinus className='text-2xl font-thin text-red-500'/>
@@ -116,7 +116,7 @@ export default function PageWhy() {
                   <div className={cn("pt-10 gap-[30px] hidden flex-col", {' flex ': card[index]})}>
                     <div className=" flex items-center gap-[10px]">
                       <Image width={48} height={48} alt='item icon' src={item.img1.src}></Image>
-                      <p className='text-[18px] leading-[22px] font-thin'>{item.text2}</p>
+                      <p className='text-[18px] leading-[22px] font-thin'>{item.text1}</p>
                     </div>
                     <div className=" flex items-center gap-[10px]">
                       <Image width={48} height={48} alt='item icon2' src={item.img2.src}></Image>
@@ -134,18 +134,7 @@ export default function PageWhy() {
       </section>
   );
 }
-const why =
-  " bg-bgDark flex justify-center w-full";
+const why =" bg-bgDark flex justify-center w-full min-h-[1100px]";
 const wrapper = 'flex flex-col max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px]'
 const whyTitle = "text-gray text-[40px] w-full  mb-[28px]";
 const whyText = "w-3/5  text-[20px] mb-[60px] leading-[28px] font-thin";
-const whyRow =
-  "flex flex-col lg:flex-row w-full mb-[60px] justify-between items-center";
-const whyRowContent = "flex w-full lg:w-[40%] flex-col";
-const whyRowImage =
-  "w-full lg:w-[48%] bg-cover bg-no-repeat rounded-3xl min-h-[400px] w-[48%] shadow-[0_0_200px_-100px_rgba(0,0,0,1)]";
-const whyRowTitle = "text-[32px] text-gray leading-[38px] mb-[40px]";
-const whyRowItems = "flex flex-col";
-const whyRowItem = "flex mb-[30px] items-center";
-const whyRowItemImage = "min-w-[48px] h-[48px] bg-cover bg-no-repeat ";
-const whyRowText = "pl-[16px] text-[18px] text-gray leading-[22px]";
