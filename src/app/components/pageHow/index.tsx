@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import image from "../../../../public/assets/howItWorks.png";
+import image from "../../../../public/assets/how.png";
 import { useEffect, useRef, useState } from "react";
 
 const slides = [

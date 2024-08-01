@@ -1,9 +1,9 @@
 "use client";
 import { useRef, useState } from "react";
-import image from '../../../../public/assets/explore1.png';
-import image2 from '../../../../public/assets/explore2.png';
-import image3 from '../../../../public/assets/explore3.png';
-import image4 from "../../../../public/assets/explore4.png";
+import image from '../../../../public/assets/features1.png';
+import image2 from '../../../../public/assets/features2.png';
+import image3 from '../../../../public/assets/features3.png';
+import image4 from "../../../../public/assets/features4.png";
 import Slider from 'react-slick';
 import Image from "next/image";
 
@@ -81,10 +81,11 @@ export default function PageFeatures() {
               </div>
               <div className={featureSlideImage}>
                 <Image
-                  width='1900'
-                  height='1900'
+                  width='871'
+                  height='784'
                   alt="image of office"
                   src={images[slide]}
+
                 />
               </div>
             </div>
@@ -95,6 +96,7 @@ export default function PageFeatures() {
   );
 }
 
+const featureSlideImage = "flex w-full xl:w-1/2 bg-no-repeat rounded-xl h-[522px] overflow-hidden items-center";
 
 const features = " flex justify-center w-full bg-bgLight  ";
 const wrapper = 'max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px]'
@@ -106,4 +108,3 @@ const featureSlide = "flex-col max-w-[1240px]  xl:flex-row flex px-0 xl:px-[40px
 const featureSlideContent = "flex flex-col w-full xl:w-1/2 xl:pr-[100px] py-[35px]";
 const featureSlideTitle = "text-gray text-[24px] mb-[16px] lg:mb-[30px]";
 const featureSlideText = "w-wull text-gray text-[20px] font-thin whitespace-wrap";
-const featureSlideImage = "flex w-full xl:w-1/2 h-min bg-no-repeat rounded-xl max-h-[500px] xl:max-h-[350px] overflow-hidden items-center";
