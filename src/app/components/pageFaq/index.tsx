@@ -31,7 +31,7 @@ const faqMenuItems2 = [
   },
   {
     title: "What's the typical Return on Investment (ROI) for a notch installation?",
-    content: "For a typical 100,000 sq ft office in Singapore, you can save up to $46,000 on annual energy costs and about $1,700 on carbon tax. Most clients see full ROI within 12-18 months.",
+    content: "For a typical 100,000 sq ft office in Singapore, you can save up to $45,000 on annual energy costs and about $1,500 on carbon tax. Most clients see full ROI within 12 months.",
   },
   {
     title: "How easy is it to install and maintain notch devices?",

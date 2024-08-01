@@ -49,7 +49,7 @@ export default function PageDiscover() {
             <h3 className={discoverCardTitle}>notch.Scale</h3>
 
             <h4 className='text-[32px] text-[#333333] mb-[10px]'>$ 2.49</h4>
-            <p className={discoverCardText}>/Device /Month + One-time Hardware Cost </p>
+            <p className={discoverCardText}>/ Device / Month + One-time Hardware Cost </p>
 
             <div className='text-[18px] mb-4'>Enterprise-Wide Energy Waste Reduction</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>

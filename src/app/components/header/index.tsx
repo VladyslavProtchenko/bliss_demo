@@ -30,7 +30,7 @@ export default function Header() {
     return (
       <header className={header}>
         <div className={wrapper}>
-          <Image alt='Bliss logo' width='99' height='99' src={logoImage} className='cursor-pointer'/>
+          <Image alt='Bliss logo' width='100' height='100' src={logoImage} className='cursor-pointer w-[150px] mt-4'/>
 
           {/* <div className={menu}>
               <div className={nemuItem} ref={ref} onClick={()=>setOpen(!open)}>
@@ -72,13 +72,15 @@ export default function Header() {
     )
   }
 
+
+const wrapper = 'max-w-[1440px] flex w-full h-full items-center justify-between px-[40px] lg:px-[100px] '
+const header = 'h-[80px] w-full flex justify-center '
+const buttons = ' md:flex hidden gap-5 '
+
+
 const submenu = 'absolute flex  bg-bgLight flex-col top-[50px] z-20 w-[300px]'
 const subItem = 'flex flex-col gap-[10px] cursor-pointer py-[15px] last:pb-[30px]  first:pt-[30px] px-[24px] hover:bg-[#eee]'
 const subHeader = 'text-gray text-[16px] font-bold hover:underline'
 const subText = 'text-[12px] font-light leading-[14px]'
-
-const wrapper = 'max-w-[1440px] flex w-full h-full items-center justify-between px-[40px] lg:px-[100px] '
-const header = 'h-[80px] w-full flex justify-center '
-const menu = ' md:flex hidden gap-10 '
 const nemuItem = 'relative flex items-center gap-2 font-thin cursor-pointer group'
-const buttons = ' md:flex hidden gap-5 '
+const menu = ' md:flex hidden gap-10 '
