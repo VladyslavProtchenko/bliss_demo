@@ -151,10 +151,10 @@ export default function PageProblems() {
 
 const line = 'w-full border-[1px] border-orange mb-10 mt-auto'
 
-const cardStyle = 'w-full lg:w-1/2 shrink flex items-start justify-end cursor-pointer'
-const cardItemGreen = 'w-[95%] max-w-[600px] text-center bg-green rounded-[40px] min-h-[480px] p-10 flex items-center flex-col '
+const cardStyle = 'w-full lg:w-1/2 shrink flex justify-center items-start lg:justify-end cursor-pointer'
+const cardItemGreen = 'w-[95%] max-w-[600px]   text-center bg-green rounded-[40px] min-h-[480px] p-10 flex items-center flex-col '
 const cardItemWhite = 'w-[95%] max-w-[600px] text-center bg-white min-h-[480px] rounded-[40px] p-10 flex items-center flex-col '
-const problem =  "flex w-full max-w-[1440px] flex-col lg:flex-row px-[30px] md:px-[60px] lg:px-[100px] py-[80px] w-full justify-between";
+const problem =  "flex w-full max-w-[1440px] flex-col  lg:flex-row px-[30px] md:px-[60px] lg:px-[100px] py-[80px] w-full justify-between";
 const problemContent = " w-full lg:w-[48%] pb-[40px] lg:pb-0";
 const problemTitle = "text-[32px] font-medium text-[#333] mb-[30px]";
 const problemMenuConteiner =  "flex flex-col border-b-[1px] border-[#333] mb-[30px]";

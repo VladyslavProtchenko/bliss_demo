@@ -106,4 +106,4 @@ const featureSlide = "flex-col max-w-[1240px]  xl:flex-row flex px-0 xl:px-[40px
 const featureSlideContent = "flex flex-col w-full xl:w-1/2 xl:pr-[100px] py-[35px]";
 const featureSlideTitle = "text-gray text-[24px] mb-[16px] lg:mb-[30px]";
 const featureSlideText = "w-wull text-gray text-[20px] font-thin whitespace-wrap";
-const featureSlideImage = "flex /Users/admin/Downloads/exploreImage4.pngw-full xl:w-1/2 h-min bg-no-repeat rounded-xl max-h-[420px] overflow-hidden items-center";
+const featureSlideImage = "flex w-full xl:w-1/2 h-min bg-no-repeat rounded-xl max-h-[500px] xl:max-h-[350px] overflow-hidden items-center";

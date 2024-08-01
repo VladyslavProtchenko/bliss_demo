@@ -15,10 +15,10 @@ export default function Integrations() {
   return (
       <section className={section}>
         <div className={wrapper}>
-            <h1 className='text-[40px] w-2/3 leading-[44px] text-gray mb-[70px]'>Seamless <span className='text-red-500'>Integration</span> with Carbon Emission Tracking and Reporting Platforms</h1>
-            <div className='flex flex-col md:flex-row'>
+            <h1 className='text-[40px] w-full lg:w-2/3 leading-[44px] text-gray mb-[70px]'>Seamless <span className='text-red-500'>Integration</span> with Carbon Emission Tracking and Reporting Platforms</h1>
+            <div className='flex flex-col lg:flex-row'>
                 {items.map(item =>(
-                    <div key={item.title} className="border-orange border-b md:border-b-0 md:border-r-2 md:last:border-none px-[30px] py-4">
+                    <div key={item.title} className="border-orange border-b lg:border-b-0 lg:border-r-2 lg:last:border-none px-[30px] py-4">
                         <Image className='mb-5 size-[100px]' src={item.img.src} width={100} height={100} alt='integration icon' />
                         <h2 className='text-2xl text-gray mb-4'>{item.title}</h2>
                         <p className='text-[18px] text-gray font-thin leading-[22px] mb-[10px]'>{item.text}</p>

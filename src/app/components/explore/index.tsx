@@ -26,7 +26,7 @@ export default function ExplorePage() {
                 <div className={content}>
                   <h2 className={cardTitle}>{item.title}</h2>
                   <p className={cardText}>{item.text}</p>
-                  <div className='flex items-center mt-auto justify-center h-[350px] overflow-hidden rounded-2xl'>
+                  <div className='flex items-center mt-auto justify-center h-[500px] xl:h-[350px] overflow-hidden rounded-2xl'>
                     <Image alt='background image' src={item.image.src} width={item.w} height={item.h} />
                   </div>
                 </div>
