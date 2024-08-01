@@ -103,10 +103,10 @@ export default function PageFaq() {
 }
 
 const faq = " max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px] w-full";
-const faqTitle = "text-gray text-[18px] leading-[24px] w-full text-start mb-[40px]";
+const faqTitle = "text-gray font-bold text-[40px] leading-[24px] w-full text-start mb-[40px]";
 const faqMenu =
   "flex w-full md:w-[48%] flex-col border-b-[1px] border-[#333] md:mb-[30px]";
-const faqMenuItem = "flex mih-h-[86px] flex-col py-[20px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
+const faqMenuItem = "flex min-h-[90px] flex-col py-[20px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
 
 const problemMenuItemHeader = "flex justify-between items-start";
 

@@ -70,7 +70,7 @@ export default function PageProblems() {
               <img src={image1.src} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[64px] mb-[10px] leading-[80px]'>20-25%</h2>
               <p  className='text-[20px] mb-10 text-center font-thin'>electricity used in commercial buildings is wasted due to idle consumption.</p>
-              <div className='w-full border-[1px] border-orange mb-10' />
+              <div className={line} />
               <p  className='text-[14px] text-[#333333] text-center font-thin'>U.S. Department of Energy</p>
             </div>}
 
@@ -80,7 +80,7 @@ export default function PageProblems() {
               <img src={image2.src} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[64px] mb-[10px] leading-[80px]'>92%</h2>
               <p  className='text-[20px] mb-10 text-center font-thin'>companies express concern about the quality and accuracy of their ESG reporting data.</p>
-              <div className='w-full border-[1px] border-orange mb-10' />
+              <div className={line} />
               <p  className='text-[14px] text-[#333333] text-center font-thin'>Deloitte</p>
             </div> }
 
@@ -90,7 +90,7 @@ export default function PageProblems() {
               <img src={image3.src} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[64px] mb-[10px] leading-[80px]'>50%</h2>
               <p  className='text-[20px] mb-10 text-center font-thin'>reduction in direct building emissions needed by 2030 to achieve net-zero by 2050</p>
-              <div className='w-full border-[1px] border-orange mb-10' />
+              <div className={line} />
               <p  className='text-[14px] text-[#333333] text-center font-thin'>McKinsey</p>
             </div>}
 
@@ -100,7 +100,7 @@ export default function PageProblems() {
                 <img src={image4.src} alt='image of device' width='100' height='100' className={problemImage}/>
                 <h2 className='text-[40px] mb-[10px]'>225,000-337,500 kWh</h2>
                 <p className='text-[20px] mb-10 text-center font-thin'>potential annual energy savings with device-level monitoring </p>
-                <div className='w-full border-[1px] border-orange mb-10' />
+                <div className={line} />
                 <p  className='text-[14px] text-[#333333] text-center font-thin'>Energy and Buildings Journal</p>
               </div>}
         
@@ -111,7 +111,7 @@ export default function PageProblems() {
               <img src={image1.src} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[40px] mb-[10px] text-bgLight text-center leading-[52px]'>60 metric tons</h2>
               <p  className='text-[20px] mb-10 text-center text-bgLight font-thin'>of CO2 emissions reduced annually through efficient plug load management</p>
-              <div className='w-full border-[1px] border-orange mb-10' />
+              <div className={line} />
               <p  className='text-[14px] text-center text-bgLight font-thin'>Calculated for  a100,000 square feet building in Singapore</p>
             </div>}
 
@@ -121,7 +121,7 @@ export default function PageProblems() {
               <img src={image2.src} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[32px] mb-[10px]  text-bgLight text-center leading-[42px]'>Enhanced Scope 2 emissions reporting accuracy</h2>
               <p  className='text-[20px] mb-10 text-center font-thin text-bgLight'>through improved granular energy data collection</p>
-              <div className='w-full border-[1px] border-orange mb-10' />
+              <div className={line} />
               <p  className='text-[14px] ] text-center font-thin text-bgLight'>Deloitte</p>
             </div>}
 
@@ -131,7 +131,7 @@ export default function PageProblems() {
               <img src={image3.src} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[32px] mb-[10px] text-bgLight text-center leading-[42px]'>Accelerated progress towards net-zero goals</h2>
               <p  className='text-[20px] mb-10 text-center font-thin text-bgLight'>by addressing overlooked areas such as plug loads</p>
-              <div className='w-full border-[1px] border-orange mb-10' />
+              <div className={line} />
               <p  className='text-[14px]  text-center font-thin text-bgLight'>McKinsey</p>
             </div>}
 
@@ -141,7 +141,7 @@ export default function PageProblems() {
               <img src={image4.src} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[40px] mb-[10px] text-bgLight text-center leading-[53px]'>60-100 metric tons </h2>
               <p  className='text-[20px] mb-10 text-center text-bgLight font-thin'>of CO2 emissions from plug load energy consumption</p>
-              <div className='w-full border-[1px] border-orange mb-10' />
+              <div className={line} />
               <p  className='text-[14px] text-bgLight text-center font-thin'>Calculated for  a 100,000 square feet building</p>
             </div>}
         </div>
@@ -149,11 +149,13 @@ export default function PageProblems() {
   );
 }
 
+const line = 'w-full border-[1px] border-orange mb-10 mt-auto'
+
 const cardStyle = 'w-full lg:w-1/2 shrink flex items-start justify-end cursor-pointer'
-const cardItemGreen = 'w-[95%] text-center bg-green rounded-[40px] p-10 flex items-center flex-col '
-const cardItemWhite = 'w-[95%] text-center bg-white rounded-[40px] p-10 flex items-center flex-col '
+const cardItemGreen = 'w-[95%] max-w-[600px] text-center bg-green rounded-[40px] min-h-[480px] p-10 flex items-center flex-col '
+const cardItemWhite = 'w-[95%] max-w-[600px] text-center bg-white min-h-[480px] rounded-[40px] p-10 flex items-center flex-col '
 const problem =  "flex w-full max-w-[1440px] flex-col lg:flex-row px-[30px] md:px-[60px] lg:px-[100px] py-[80px] w-full justify-between";
-const problemContent = " w-full lg:w-1/2 pb-[40px] lg:pb-0";
+const problemContent = " w-full lg:w-[48%] pb-[40px] lg:pb-0";
 const problemTitle = "text-[32px] font-medium text-[#333] mb-[30px]";
 const problemMenuConteiner =  "flex flex-col border-b-[1px] border-[#333] mb-[30px]";
 const problemMenuItem = "flex flex-col py-[36px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";

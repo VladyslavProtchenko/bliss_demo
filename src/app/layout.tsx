@@ -4,14 +4,13 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { cn } from "@/lib/cn";
-
+import Head from 'next/head';
 import Header from "./components/header";
 import Footer from "./components/footer";
-
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 export const metadata: Metadata = {
-  title: "Bliss",
+  title: "Notch",
   description: "Bliss best website in thje world",
 };
 

@@ -1,6 +1,9 @@
 "use client";
 import { useRef, useState } from "react";
-import image from "../../../../public/assets/featuresImage.svg";
+import image from '../../../../public/assets/exploreimage1.png'
+import image2 from '../../../../public/assets/exploreimage2.png'
+import image3 from '../../../../public/assets/exploreimage3.png'
+import image4 from "../../../../public/assets/exploreimage4.png";
 import Slider from 'react-slick';
 import Image from "next/image";
 
@@ -32,9 +35,14 @@ const featuresCards: {title:string, text:string}[] = [
 export default function PageFeatures() {
   const [slide, setSlide] = useState<number>(0);
   const sliderRef = useRef<Slider | null>(null)
+  const images: {[key:number]: string} = {
+    0: image.src,
+    1: image2.src,
+    2: image3.src,
+    3: image4.src,
+  }
 
   return (
-
       <section className={features}>
         <div className={wrapper}>
           <h1 className={featuresTitle}>notch: Cutting-Edge Climate Tech for Sustainable Buildings</h1>
@@ -71,13 +79,14 @@ export default function PageFeatures() {
                   {item.text}
                 </div>
               </div>
-              <Image
-                width='615'
-                height='394'
-                alt="image of office"
-                src={image.src}
-                className={featureSlideImage}
-              />
+              <div className={featureSlideImage}>
+                <Image
+                  width='1900'
+                  height='1900'
+                  alt="image of office"
+                  src={images[slide]}
+                />
+              </div>
             </div>
           ))}
         </div>
@@ -97,4 +106,4 @@ const featureSlide = "flex-col max-w-[1240px]  xl:flex-row flex px-0 xl:px-[40px
 const featureSlideContent = "flex flex-col w-full xl:w-1/2 xl:pr-[100px] py-[35px]";
 const featureSlideTitle = "text-gray text-[24px] mb-[16px] lg:mb-[30px]";
 const featureSlideText = "w-wull text-gray text-[20px] font-thin whitespace-wrap";
-const featureSlideImage = "w-full xl:w-1/2 h-min bg-no-repeat rounded-xl";
+const featureSlideImage = "flex /Users/admin/Downloads/exploreImage4.pngw-full xl:w-1/2 h-min bg-no-repeat rounded-xl max-h-[420px] overflow-hidden items-center";

@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
-import image from '../../../../public/assets/ExploreImage1.png'
+import image from '../../../../public/assets/exploreImage1.png'
 import image2 from '../../../../public/assets/exploreimage2.png'
 import image3 from '../../../../public/assets/exploreimage3.png'
-import image4 from "../../../../public/assets/featuresImage.svg";
+import image4 from "../../../../public/assets/exploreimage4.png";
 
 const cards =[
   {image: image, w:1900, h:1900, title: 'notchPlug', text: 'Single-outlet device powered by machine learning to identify connected devices, learn usage and cut power when not needed.'},
   {image: image2, w:1900, h:1900, title: 'notchStrip', text: 'Multi-outlet device that intelligently manages several connected devices, reducing energy waste during idle times.'},
-  {image: image3, w:1900, h:1900, title: 'notchGateway', text: 'Central unit that coordinates all Notch devices, analyzes building-wide energy use, and sends data to Notch Hub.'},
+  {image: image3, w:1900, h:1900, title: 'notchConnect', text: 'Central unit that coordinates all Notch devices, analyzes building-wide energy use, and sends data to Notch Hub.'},
   {image: image4, w:6000, h:3375, title: 'notchHub', text: 'Central dashboard that collects data from all Notch devices, displays real-time energy use and savings, and reports emission savings to carbon accounting platforms.'},
 ]
 
@@ -26,7 +26,7 @@ export default function ExplorePage() {
                 <div className={content}>
                   <h2 className={cardTitle}>{item.title}</h2>
                   <p className={cardText}>{item.text}</p>
-                  <div className='flex items-center  justify-center h-[320px] overflow-hidden rounded-2xl'>
+                  <div className='flex items-center mt-auto justify-center h-[350px] overflow-hidden rounded-2xl'>
                     <Image alt='background image' src={item.image.src} width={item.w} height={item.h} />
                   </div>
                 </div>

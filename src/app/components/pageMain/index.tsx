@@ -24,8 +24,8 @@ export default function PageMain() {
           notch offers intelligent power management devices that actively reduce your plug load energy consumption, a major contributor to Scope 2 emissions. Our devices use machine learning to optimize power delivery, eliminating standby drain and cutting both energy costs and carbon footprint.
           </p>
           <div className={mainButtons}>
-            <Button title="Get Your Starter Kit" type="orange" onClick={() => {}} />
-            <Button title="Book a Demo" type="light"  onClick={() => window.open('https://calendly.com/notch-energy/exploring-notch?primary_color=e94234&month=2024-07', '_blank')} />
+            <Button title="Get Your Starter Kit" type="orange" onClick={() => window.open('https://notch-start.paperform.co/', '_blank')}  />
+            <Button title="Book a Demo" type="light"  onClick={() => window.open('https://notch-demo.paperform.co/', '_blank')} />
           </div>
         </div>
       </div>

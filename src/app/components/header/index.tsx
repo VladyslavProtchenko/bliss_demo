@@ -64,7 +64,7 @@ export default function Header() {
           
           <nav className={buttons}>
             {/* <Button type='outline' title='Sign In' onClick={()=>console.log('Sign In')} className='px-[36px] py-[10px]'/> */}
-            <Button type='orange' title='Book a Demo'onClick={() => window.open('https://calendly.com/notch-energy/exploring-notch?primary_color=e94234&month=2024-07', '_blank')} className='px-[36px] py-[10px]'/>
+            <Button type='orange' title='Book a Demo'onClick={() => window.open('https://notch-demo.paperform.co/', '_blank')} className='px-[36px] py-[10px]'/>
           </nav>
           <RxHamburgerMenu className='text-[48px] md:hidden'/>
         </div>

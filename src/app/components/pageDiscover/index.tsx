@@ -11,23 +11,23 @@ export default function PageDiscover() {
             <h3 className={discoverCardTitle}>notch.Start</h3>
 
             <h4 className='text-[32px] text-[#333333] mb-[10px]'>$ 2499</h4>
-            <p className={discoverCardText}>for 50 notchPlug devices <br /> Full credit towards enterprise rollout</p>
+            <p className={discoverCardText}>Full credit towards enterprise rollout</p>
 
-            <div className='text-[18px] mb-5'>What&apos;s Included:</div>
+            <div className='text-[18px] mb-5'>What&apos;s Included</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
               <li>50 notch Plugs</li>
               <li>1 Notch Gateway</li>
               <li>Full access to Notch Hub dashboard</li>
             </ul>
 
-            <div className='text-[18px] mb-4'>Perfect for:</div>
+            <div className='text-[18px] mb-4'>Perfect for</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
               <li>Piloting in a single office area</li>
               <li>Evaluating impact in a specific zone of a large facility</li>
               <li>Proof of concept for enterprise-wide deployment</li>
             </ul>
 
-            <div className='text-[18px] mb-5'>Benefits::</div>
+            <div className='text-[18px] mb-5'>Benefits</div>
             <ul className='mb-10 pl-4 list-disc text-gray'>
               <li>Rapid proof of concept</li>
               <li>Expert-guided implementation and support</li>
@@ -39,7 +39,7 @@ export default function PageDiscover() {
               <Button
                 title="Get Your Starter Kit"
                 type="orange"
-                onClick={() => window.open('https://calendly.com/notch-energy/exploring-notch?primary_color=e94234&month=2024-07', '_blank')}
+                onClick={() => window.open('https://notch-start.paperform.co/', '_blank')}
                 className="px-[25px] py-[9px]"
               />
             </div>
@@ -49,14 +49,13 @@ export default function PageDiscover() {
             <h3 className={discoverCardTitle}>notch.Scale</h3>
 
             <h4 className='text-[32px] text-[#333333] mb-[10px]'>$ 2.49</h4>
-            <p className={discoverCardText}>/ Device /Month + One-time Hardware Cost </p>
+            <p className={discoverCardText}>/Device /Month + One-time Hardware Cost </p>
 
             <div className='text-[18px] mb-4'>Enterprise-Wide Energy Waste Reduction</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
-              <li>Includes plugs, power strips, and relays for comprehensive plug load management across your entire portfolio</li>
-              <li>Includes Occupancy Sensors and Temperature Sensors (for vending machines)</li>
-              <li>Real-time energy consumption anc emission tracking and analysis</li>
-              <li>Automated identification and elimination of energy waste</li>
+              <li>Comprehensive plug load management across your entire portfolio</li>
+              <li>Real-time energy consumption and emission reporting </li>
+              <li>Integration with your sustainability reporting software</li>
             </ul>
 
             <div className='text-[18px] mb-4'>Pricing</div>
@@ -66,7 +65,7 @@ export default function PageDiscover() {
               <li>Free access to the software for the first 6 months </li>
             </ul>
 
-            <div className='text-[18px] mb-4'>Additional services:</div>
+            <div className='text-[18px] mb-4'>Additional services</div>
             <ul className='mb-10 pl-4 list-disc text-gray'>
               <li>Setup and installation support (one-time fee, scope-based pricing)</li>
               <li>API integration (custom quote based on complexity)</li>
@@ -76,7 +75,7 @@ export default function PageDiscover() {
               <Button
                 title="Schedule A Demo Today"
                 type="orange"
-                onClick={() => window.open('https://calendly.com/notch-energy/exploring-notch?primary_color=e94234&month=2024-07', '_blank')}
+                onClick={() => window.open('https://notch-demo.paperform.co/', '_blank')}
                 className="px-[25px] py-[9px]"
               />
             </div>
@@ -89,7 +88,7 @@ export default function PageDiscover() {
 
 
 
-const discover = "max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[80px]";
+const discover = "max-w-[1440px] px-[30px] w-full md:px-[60px] lg:px-[100px] py-[80px]";
 const discoverTitle = "font-gray text-[40px] w-full text-center mb-[40px]";
 const discoverCards = "flex flex-col lg:flex-row justify-between";
 const discoverCard =  "flex flex-col w-full lg:w-[48%] mb-[20px] lg:mb-0 rounded-2xl bg-bgDark p-[30px]";
