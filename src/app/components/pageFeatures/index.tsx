@@ -1,9 +1,9 @@
 "use client";
 import { useRef, useState } from "react";
-import image from '../../../../public/assets/exploreImage1.png';
-import image2 from '../../../../public/assets/exploreImage2.png';
-import image3 from '../../../../public/assets/exploreImage3.png';
-import image4 from "../../../../public/assets/exploreImage4.png";
+import image from '../../../../public/assets/explore1.png';
+import image2 from '../../../../public/assets/explore2.png';
+import image3 from '../../../../public/assets/explore3.png';
+import image4 from "../../../../public/assets/explore4.png";
 import Slider from 'react-slick';
 import Image from "next/image";
 

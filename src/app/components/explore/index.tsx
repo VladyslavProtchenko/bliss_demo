@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import image from '../../../../public/assets/exploreImage1.png';
-import image2 from '../../../../public/assets/exploreImage2.png';
-import image3 from '../../../../public/assets/exploreImage3.png';
-import image4 from "../../../../public/assets/exploreImage4.png";
+import image from '../../../../public/assets/explore1.png';
+import image2 from '../../../../public/assets/explore2.png';
+import image3 from '../../../../public/assets/explore3.png';
+import image4 from "../../../../public/assets/explore4.png";
 
 const cards =[
   {image: image, w:1900, h:1900, title: 'notchPlug', text: 'Single-outlet device powered by machine learning to identify connected devices, learn usage and cut power when not needed.'},
