@@ -4,7 +4,7 @@ import useOnclickOutside from "react-cool-onclickoutside";
 import { GoChevronDown, GoChevronUp } from "react-icons/go";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import logoImage from '../../../../public/assets/blissLogoBlack.png'
+import logoImage from '../../../../public/assets/logo.svg'
 import Button from '../button';
 import Image from 'next/image';
 import Link from 'next/link';

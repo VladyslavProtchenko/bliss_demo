@@ -1,15 +1,15 @@
 "use client";
 import Image from "next/image";
-import image from '../../../../public/assets/explore1.png';
-import image2 from '../../../../public/assets/explore2.png';
-import image3 from '../../../../public/assets/explore3.png';
-import image4 from "../../../../public/assets/explore4.png";
+import image from '../../../../public/assets/explore11.png';
+import image2 from '../../../../public/assets/explore22.svg';
+// import image3 from '../../../../public/assets/explore3.png';
+// import image4 from "../../../../public/assets/explore4.png";
 
 const cards =[
   {image: image, w:1900, h:1900, title: 'notchPlug', text: 'Single-outlet device powered by machine learning to identify connected devices, learn usage and cut power when not needed.'},
-  {image: image2, w:1900, h:1900, title: 'notchStrip', text: 'Multi-outlet device that intelligently manages several connected devices, reducing energy waste during idle times.'},
-  {image: image3, w:1900, h:1900, title: 'notchConnect', text: 'Central unit that coordinates all Notch devices, analyzes building-wide energy use, and sends data to Notch Hub.'},
-  {image: image4, w:6000, h:3375, title: 'notchHub', text: 'Central dashboard that collects data from all Notch devices, displays real-time energy use and savings, and reports emission savings to carbon accounting platforms.'},
+  // {image: image2, w:1900, h:1900, title: 'notchStrip', text: 'Multi-outlet device that intelligently manages several connected devices, reducing energy waste during idle times.'},
+  // {image: image3, w:1900, h:1900, title: 'notchConnect', text: 'Central unit that coordinates all Notch devices, analyzes building-wide energy use, and sends data to Notch Hub.'},
+  {image: image2, w:6000, h:3375, title: 'notchHub', text: 'Central dashboard that collects data from all Notch devices, displays real-time energy use and savings, and reports emission savings to carbon accounting platforms.'},
 ]
 
 
@@ -17,7 +17,7 @@ export default function ExplorePage() {
   return (
       <section className={discover}>
         <div className={wrapper}>
-          <h1 className={title}>Our Devices and Software: Powered by Machine Learning</h1>
+          <h1 className={title}>Our Technology: Powered by Machine Learning</h1>
 
           <div className='flex flex-col xl:flex-row w-full  flex-wrap  justify-between '>
             {
