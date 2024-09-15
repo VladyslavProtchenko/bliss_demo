@@ -1,9 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import image from '../../../../public/assets/features1.png';
-import image2 from '../../../../public/assets/features2.png';
-import image3 from '../../../../public/assets/features3.png';
-import image4 from "../../../../public/assets/features4.png";
+
 import Slider from 'react-slick';
 import Image from "next/image";
 
@@ -32,14 +29,15 @@ const featuresCards: {title:string, text:string}[] = [
     text:"notch technology scales effortlessly to match your organization's growth and evolving sustainability goals. Start with a single floor or deploy across your entire real estate portfolio – our system adapts seamlessly. The centralized notchHub integrates new devices instantly, allowing you to expand your energy waste reduction efforts as needed.across your office buildings worldwide."
   },
 ];
+
 export default function PageFeatures() {
   const [slide, setSlide] = useState<number>(0);
   const sliderRef = useRef<Slider | null>(null)
   const images: {[key:number]: string} = {
-    0: image.src,
-    1: image2.src,
-    2: image3.src,
-    3: image4.src,
+    0: '/assets/features1.png',
+    1: '/assets/features2.png',
+    2: '/assets/features3.png',
+    3: "/assets/features4.png",
   }
 
   return (
@@ -50,27 +48,17 @@ export default function PageFeatures() {
             {featuresTabs.map((item, index) => (
               <span
                 key={item}
-                className={
-                  index == slide ? featuresSliderItemActive : featuresSliderItem
-                }
+                className={ index == slide ? featuresSliderItemActive : featuresSliderItem }
                 onClick={() => {
                   setSlide(index)
                   if(!sliderRef.current) return;
                   sliderRef.current.slickGoTo(index)
                 }}
-              >
-                {item}
-              </span>
+              >{item}</span>
             ))}
           </div>
           {featuresCards.map((item, index)=>(
-            
-            <div 
-              key={item.title}
-              className={
-                index === slide ? featureSlide : 'hidden'
-                }
-            >
+            <div key={item.title} className={index === slide ? featureSlide : 'hidden' }>
               <div className={featureSlideContent}>
                 <h3 className={featureSlideTitle}>
                   {item.title}
@@ -80,19 +68,12 @@ export default function PageFeatures() {
                 </div>
               </div>
               <div className={featureSlideImage}>
-                <Image
-                  width='871'
-                  height='784'
-                  alt="image of office"
-                  src={images[slide]}
-
-                />
+                <Image width='871' height='784' alt="image of office" src={images[slide]}/>
               </div>
             </div>
           ))}
         </div>
       </section>
-
   );
 }
 
@@ -102,8 +83,8 @@ const features = " flex justify-center w-full bg-bgLight  ";
 const wrapper = 'max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px]'
 const featuresTitle = "w-full md:text-center text-[#333] text-[40px] mb-[60px] ";
 const featuresSlider = "flex flex-wrap lg:flex-nowrap ";
-const featuresSliderItem = "w-full sm:w-1/2 px-auto  text-center pb-[23px] border-b-[1px] opacity-25 cursor-pointer";
-const featuresSliderItemActive = "w-full sm:w-1/2 text-center px-auto pb-[20px] border-b-[1px]  cursor-pointer border-orange border-b-[3px]";
+const featuresSliderItem = "w-full pt-4 sm:w-1/2 px-auto  text-center pb-[23px] border-b-[1px] opacity-25 cursor-pointer";
+const featuresSliderItemActive = "w-full pt-4 sm:w-1/2 text-center px-auto pb-[20px] border-b-[1px]  cursor-pointer border-orange border-b-[3px]";
 const featureSlide = "flex-col max-w-[1240px]  xl:flex-row flex px-0 xl:px-[40px] w-full py-[35px] opacity-1 duration-500";
 const featureSlideContent = "flex flex-col w-full xl:w-1/2 xl:pr-[100px] py-[35px]";
 const featureSlideTitle = "text-gray text-[24px] mb-[16px] lg:mb-[30px]";

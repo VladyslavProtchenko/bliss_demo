@@ -1,14 +1,6 @@
 "use client";
 import { GoChevronDown, GoChevronUp } from "react-icons/go";
-import Button from "./../../components/button";
 import { useState } from "react";
-
-import image1 from "../../../../public/assets/blissCardImage1.png";
-import image2 from "../../../../public/assets/blissCardImage2.png";
-import image3 from "../../../../public/assets/blissCardImage3.png";
-import image4 from "../../../../public/assets/blissCardImage4.png";
-import { cn } from "@/lib/cn";
-
 
 const problemMenu = [
   {
@@ -68,17 +60,17 @@ export default function PageProblems() {
         <div className={cardStyle}>
           {card === 0 &&
             <div onMouseEnter={()=>setCard(4)} className={cardItemWhite}>
-              <img src={image1.src} alt='image of device' width='100' height='100' className={problemImage}/>
-              <h2 className='text-[64px] mb-[10px] leading-[80px]'>20-25%</h2>
+              <img src={"/assets/blissCardImage1.png"} alt='image of device' width='100' height='100' className={problemImage}/>
+              <h2 className='text-[64px] mb-[10px] leading-[80px]'>7.5-10%</h2>
               <p  className='text-[20px] mb-10 text-center font-thin'>electricity used in commercial buildings is wasted due to idle consumption.</p>
               <div className={line} />
-              <p  className='text-[14px] text-[#333333] text-center font-thin'>U.S. Department of Energy</p>
+              {/* <p  className='text-[14px] text-[#333333] text-center font-thin'>U.S. Department of Energy</p> */}
             </div>}
 
 
           {card === 1 && 
             <div onMouseEnter={()=>setCard(5)} className={cardItemWhite}>
-              <img src={image2.src} alt='image of device' width='100' height='100' className={problemImage}/>
+              <img src={"/assets/blissCardImage2.png"} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[64px] mb-[10px] leading-[80px]'>92%</h2>
               <p  className='text-[20px] mb-10 text-center font-thin'>companies express concern about the quality and accuracy of their ESG reporting data.</p>
               <div className={line} />
@@ -88,7 +80,7 @@ export default function PageProblems() {
 
           {card === 2 && 
           <div onMouseEnter={()=>setCard(6)} className={cardItemWhite}>
-              <img src={image3.src} alt='image of device' width='100' height='100' className={problemImage}/>
+              <img src={"/assets/blissCardImage3.png"} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[64px] mb-[10px] leading-[80px]'>50%</h2>
               <p  className='text-[20px] mb-10 text-center font-thin'>reduction in direct building emissions needed by 2030 to achieve net-zero by 2050</p>
               <div className={line} />
@@ -98,18 +90,19 @@ export default function PageProblems() {
 
             {card === 3 && 
               <div onMouseEnter={()=>setCard(7)} className={cardItemWhite}>
-                <img src={image4.src} alt='image of device' width='100' height='100' className={problemImage}/>
-                <h2 className='text-[40px] mb-[10px]'>225,000-337,500 kWh</h2>
-                <p className='text-[20px] mb-10 text-center font-thin'>potential annual energy savings with device-level monitoring </p>
+                <img src={"/assets/blissCardImage4.png"} alt='image of device' width='100' height='100' className={problemImage}/>
+                <h2 className='text-[40px] mb-[10px]'>100 million kWh</h2>
+                <p className='text-[20px] mb-10 text-center font-thin'>wasted annually by devices and appliances sitting idle in office buildings in Singapore
+                </p>
                 <div className={line} />
-                <p  className='text-[14px] text-[#333333] text-center font-thin'>Energy and Buildings Journal</p>
+                <p  className='text-[14px] text-[#333333] text-center font-thin'>Estimated Based on BCA Singapore Building Energy Benchmarking Report 2023</p>
               </div>}
         
 
 
           {card === 4 && 
             <div onMouseLeave={()=>setCard(0)} className={cardItemGreen}>
-              <img src={image1.src} alt='image of device' width='100' height='100' className={problemImage}/>
+              <img src={"/assets/blissCardImage1.png"} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[40px] mb-[10px] text-bgLight text-center leading-[52px]'>60 metric tons</h2>
               <p  className='text-[20px] mb-10 text-center text-bgLight font-thin'>of CO2 emissions reduced annually through efficient plug load management</p>
               <div className={line} />
@@ -119,7 +112,7 @@ export default function PageProblems() {
 
           {card === 5 && 
             <div onMouseLeave={()=>setCard(1)}className={cardItemGreen}>
-              <img src={image2.src} alt='image of device' width='100' height='100' className={problemImage}/>
+              <img src={"/assets/blissCardImage2.png"} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[32px] mb-[10px]  text-bgLight text-center leading-[42px]'>Enhanced Scope 2 emissions reporting accuracy</h2>
               <p  className='text-[20px] mb-10 text-center font-thin text-bgLight'>through improved granular energy data collection</p>
               <div className={line} />
@@ -129,7 +122,7 @@ export default function PageProblems() {
 
           {card === 6 &&
             <div onMouseLeave={()=>setCard(2)} className={cardItemGreen}>
-              <img src={image3.src} alt='image of device' width='100' height='100' className={problemImage}/>
+              <img src={"/assets/blissCardImage3.png"} alt='image of device' width='100' height='100' className={problemImage}/>
               <h2 className='text-[32px] mb-[10px] text-bgLight text-center leading-[42px]'>Accelerated progress towards net-zero goals</h2>
               <p  className='text-[20px] mb-10 text-center font-thin text-bgLight'>by addressing overlooked areas such as plug loads</p>
               <div className={line} />
@@ -139,11 +132,11 @@ export default function PageProblems() {
 
           {card === 7 && 
             <div onMouseLeave={()=>setCard(3)} className={cardItemGreen}>
-              <img src={image4.src} alt='image of device' width='100' height='100' className={problemImage}/>
-              <h2 className='text-[40px] mb-[10px] text-bgLight text-center leading-[53px]'>60-100 metric tons </h2>
+              <img src={"/assets/blissCardImage4.png"} alt='image of device' width='100' height='100' className={problemImage}/>
+              <h2 className='text-[40px] mb-[10px] text-bgLight text-center leading-[53px]'>40,0000 metrics tons</h2>
               <p  className='text-[20px] mb-10 text-center text-bgLight font-thin'>of CO2 emissions from plug load energy consumption</p>
               <div className={line} />
-              <p  className='text-[14px] text-bgLight text-center font-thin'>Calculated for  a 100,000 square feet building</p>
+              {/* <p  className='text-[14px] text-bgLight text-center font-thin'></p> */}
             </div>}
         </div>
       </section>

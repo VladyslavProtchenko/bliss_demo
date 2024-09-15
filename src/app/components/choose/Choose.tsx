@@ -1,27 +1,24 @@
-import Image from 'next/image';
-import image from '../../../../public/assets/choose1.png'
-import image2 from '../../../../public/assets/choose2.png'
-import image3 from '../../../../public/assets/choose3.png'
+import Image from 'next/image'; 
 
 export default function Choose() {
   return (
       <section className={discover}>
-        <h2 className={discoverTitle}>Let&apos;s Get Started</h2>
+        <h2 className={discoverTitle}>Why choose notch?</h2>
         <div className={discoverCards}>
           <div className={discoverCard}>
-            <Image alt='image' width='100' height='100' src={image.src} />
+            <Image alt='image' width='100' height='100' src='/assets/choose1.png' />
             <h3 className={discoverCardTitle}>Impact</h3>
-            <p className={discoverCardText}>notch reduces Scope 2 emissions in your real estate portfolio by up to 20% and cuts energy costs by up to 30%. This approach accelerates progress towards your corporate sustainability goals, providing tangible environmental results.</p>
+            <p className={discoverCardText}>notch reduces Scope 2 emissions in your real estate portfolio by up to 20% and cuts energy costs by up to 30%. This approach accelerates progress towards your corporate sustainability goals, providing tangible environmental results..</p>
           </div>
 
           <div className={discoverCard}>
-            <Image alt='image' width='100' height='100' src={image2.src} />
+            <Image alt='image' width='100' height='100' src='/assets/choose2.png' />
             <h3 className={discoverCardTitle}>Intelligent</h3>
             <p className={discoverCardText}>Our ML-powered devices learn and adapt to your usage patterns, improving power delivery across facilities in real-time. notch eliminates standby waste without disrupting operations, ensuring energy savings while maintaining productivity.</p>
           </div>          
           
           <div className={discoverCard}>
-            <Image alt='image' width='100' height='100' src={image3.src} />
+            <Image alt='image' width='100' height='100' src='/assets/choose3.png' />
             <h3 className={discoverCardTitle}>Secured</h3>
             <p className={discoverCardText}>notch uses a dedicated network separate from your IT infrastructure. End-to-end encryption ensures data integrity and cybersecurity. Our enterprise-grade protection safeguards your energy data while enabling reliable management.</p>
           </div>
@@ -29,8 +26,6 @@ export default function Choose() {
       </section>
   );
 }
-
-
 
 const discover = "max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[80px]";
 const discoverTitle = "font-gray text-[40px] w-full text-center mb-[40px]";

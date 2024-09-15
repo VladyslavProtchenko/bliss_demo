@@ -10,14 +10,14 @@ export default function PageDiscover() {
 
             <h3 className={discoverCardTitle}>notch.Start</h3>
 
-            <h4 className='text-[32px] text-[#333333] mb-[10px]'>$ 2499</h4>
+            <h4 className='text-[32px] text-[#333333] mb-[10px]'>$2499</h4>
             <p className={discoverCardText}>Full credit towards enterprise rollout</p>
 
             <div className='text-[18px] mb-5'>What&apos;s Included</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
               <li>50 notch Plugs</li>
-              <li>1 Notch Gateway</li>
-              <li>Full access to Notch Hub dashboard</li>
+              <li>1 notchConnect device (for network connectivity)</li>
+              <li>Full access to NotchHub dashboard</li>
             </ul>
 
             <div className='text-[18px] mb-4'>Perfect for</div>
@@ -48,8 +48,8 @@ export default function PageDiscover() {
           <div className={discoverCard}>
             <h3 className={discoverCardTitle}>notch.Scale</h3>
 
-            <h4 className='text-[32px] text-[#333333] mb-[10px]'>$ 2.49</h4>
-            <p className={discoverCardText}>/ Device / Month + One-time Hardware Cost </p>
+            <h4 className='text-[32px] text-[#333333] mb-[10px]'>$1.99</h4>
+            <p className={discoverCardText}>/ per m² / year</p>
 
             <div className='text-[18px] mb-4'>Enterprise-Wide Energy Waste Reduction</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
@@ -60,9 +60,9 @@ export default function PageDiscover() {
 
             <div className='text-[18px] mb-4'>Pricing</div>
             <ul className='mb-8 pl-4 list-disc text-gray'>
-              <li >One-time hardware cost</li>
-              <li>Monthly software subscription: $2.49 per device</li>
-              <li>Free access to the software for the first 6 months </li>
+              <li>$1.99 / per m² / year (paid annually) </li>
+              <li>$0.99 / per m² for Year 1 (one-time upfront)</li>
+              <li>1 Year Guaranteed Payback</li>
             </ul>
 
             <div className='text-[18px] mb-4'>Additional services</div>

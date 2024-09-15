@@ -8,10 +8,14 @@ import PageWhy from "./components/pageWhy";
 import ExplorePage from "./components/explore";
 import Integrations from "@components/integrationSection/Integration";
 import Choose from "@components/choose/Choose";
+import Head from "next/head";
 export default function Home() {
 
   return (
     <main className={container}>
+        <Head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+        </Head>
       <PageMain/>
       <PageProblems />
       <ExplorePage />

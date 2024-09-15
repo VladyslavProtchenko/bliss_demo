@@ -13,7 +13,7 @@ const faqMenuItems = [
   },
   {
     title: "How does notch adapt to different office layouts and equipment types?",
-    content: "Notch's AI learns the unique patterns of each space and device it manages. Whether it's an open-plan office, meeting rooms, or pantry, our system cuts energy waste based on device type and actual usage patterns. This adaptability ensures effective energy waste reduction across diverse office environments.",
+    content: "notch's AI learns the unique patterns of each space and device it manages. Whether it's an open-plan office, meeting rooms, or pantry, our system cuts energy waste based on device type and actual usage patterns. This adaptability ensures effective energy waste reduction across diverse office environments.",
   },
   {
     title: "What level of energy data granularity does notch provide?",
@@ -34,8 +34,8 @@ const faqMenuItems2 = [
     content: "For a typical 100,000 sq ft office in Singapore, you can save up to $45,000 on annual energy costs and about $1,500 on carbon tax. Most clients see full ROI within 12 months.",
   },
   {
-    title: "How easy is it to install and maintain notch devices?",
-    content: "For a typical 100,000 sq ft office in Singapore, you can save up to $40,000-$ 50,000 on annual energy costs and about $1,700 on carbon tax. Your return on initial hardware purchase is typically around 9-12 months.",
+    title: " How easy is it to install and use notch?",
+    content: "Our plug-and-play solution comes with pre-commissioned devices and an interactive installation guide, making setup a breeze. Simply connect your devices to notch smart plugs, and you're all set. Through your notchHub dashboard, you can instantly monitor real-time energy and carbon savings, set up automatic scheduling for optimal efficiency, and control any connected device. The entire process is quick  and non-disruptive, allowing you to transform your office into an energy-efficient space in minutes.",
   },
 ];
 
@@ -104,12 +104,9 @@ export default function PageFaq() {
 
 const faq = " max-w-[1440px] px-[30px] md:px-[60px] lg:px-[100px] py-[60px] w-full";
 const faqTitle = "text-gray font-bold text-[40px] leading-[24px] w-full text-start mb-[40px]";
-const faqMenu =
-  "flex w-full md:w-[48%] flex-col border-b-[1px] border-[#333] md:mb-[30px]";
+const faqMenu = "flex w-full md:w-[48%] flex-col border-b-[1px] border-[#333] md:mb-[30px]";
 const faqMenuItem = "flex min-h-[90px] flex-col py-[20px] gap-[10px] border-t-[1px] border-[#333] cursor-pointer";
-
 const problemMenuItemHeader = "flex justify-between items-start";
-
 const problemMenuTitle = "text-[18px] w-[90%] leading-[24px] color-gray";
 const problemMenuText = "text-[18px] font-thin pr-10";
 

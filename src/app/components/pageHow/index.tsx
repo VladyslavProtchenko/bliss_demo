@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import image from "../../../../public/assets/how.png";
 import { useEffect, useRef, useState } from "react";
 
 const slides = [
@@ -8,11 +7,9 @@ const slides = [
   {title:'AI-Powered Waste Elimination', text:'Our machine learning algorithms continuously analyze usage data, automatically implementing targeted energy-saving actions to cut unnecessary consumption.'},
   {title:'Automated Carbon Tracking', text: 'notch software converts real-time energy data into accurate carbon emissions metrics, providing a clear, up-to-the-minute picture of your plug load carbon footprint.'},
   {title:'Seamless Emissions Reporting', text:'Our API integrates directly with your carbon accounting software, streamlining Scope 2 emissions reporting and accelerating progress towards your net-zero goals.'},
-  // {title:'Continuous Savings', text:'By constantly adapting to your building\'s unique needs, Bliss helps you save on utility bills and maintenance costs while enhancing occupant satisfaction.'},
 ]
 
 export default function PageHow() {
-  
   const [selectedItem, setSelectedItem] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -20,21 +17,18 @@ export default function PageHow() {
     const handleScroll = () => {
       const container = containerRef.current;
       if (container) {
-        const scrollTop = container.scrollTop;
-        const itemHeight = container.scrollHeight / 5; 
-        const newIndex = Math.floor(scrollTop / itemHeight);
-        setSelectedItem(newIndex+1);
+        const scrollTop = container.scrollTop-1;
+        const itemScroll = (container.scrollHeight - 500) / 4;
+
+        const index = Math.floor(scrollTop/itemScroll )
+        setSelectedItem(index <= 0 ? 0 : index );
       }
     };
 
     const container = containerRef.current;
-    if (container) {
-      container.addEventListener('scroll', handleScroll);
-    }
+    if (container) container.addEventListener('scroll', handleScroll);
     return () => {
-      if (container) {
-        container.removeEventListener('scroll', handleScroll);
-      }
+      if (container) container.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -66,22 +60,19 @@ export default function PageHow() {
             </div>
           </div>
           <div className='w-full lg:w-1/2 max-h-[300px] md:max-h-[450px] rounded-xl flex items-center overflow-hidden'>
-            <Image src={image.src} width='3928' height='4590' alt="office photo" />
+            <Image src='/assets/how.png' width='3928' height='4590' alt="office photo" />
           </div>
-          <h2 className={howWorksTitle2}>How Bliss Works</h2>
+          <h2 className={howWorksTitle2}>How it works</h2>
         </div>
       </section>
   );
 }
 
 const wrapper = 'flex max-w-[1440px] flex-col-reverse lg:flex-row py-[100px] gap-[40px] items-center px-[20px] md:px-0'
-const howWorks =
-  "flex w-full justify-center  bg-bgLight";
-const howWorksContent =
-  "flex flex-col w-full lg:w-1/2 md:pl-[30px] md:pl-[60px] lg:pl-[100px]";
+const howWorks = "flex w-full justify-center  bg-bgLight";
+const howWorksContent ="flex flex-col w-full lg:w-1/2 md:pl-[30px] md:pl-[60px] lg:pl-[100px]";
 const howWorksTitle = " hidden lg:flex text-[40px] text-gray mb-[50px]";
-const howWorksTitle2 =
-  "flex lg:hidden text-[40px] text-gray self-start ml-[30px]";
+const howWorksTitle2 ="flex lg:hidden text-[40px] text-gray self-start ml-[30px]";
 const howWorksMenu = "flex flex-col mb-[40px] max-h-[500px] overflow-y-scroll no-scrollbar";
 const howWorksMenuItem = "flex items-center";
 const howWorksNumber = "text-[36px] text-gray mr-[20px]";

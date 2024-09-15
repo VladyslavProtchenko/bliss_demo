@@ -30,7 +30,7 @@ export default function Header() {
     return (
       <header className={header}>
         <div className={wrapper}>
-          <Image alt='Bliss logo' width='100' height='100' src={logoImage} className='cursor-pointer w-[150px] mt-4'/>
+          <Image alt='Bliss logo' width='100' height='100' src='/assets/logo.svg' className='cursor-pointer w-[150px] mt-2'/>
 
           {/* <div className={menu}>
               <div className={nemuItem} ref={ref} onClick={()=>setOpen(!open)}>
@@ -74,7 +74,7 @@ export default function Header() {
 
 
 const wrapper = 'max-w-[1440px] flex w-full h-full items-center justify-between px-[40px] lg:px-[100px] '
-const header = 'h-[80px] w-full flex justify-center '
+const header = 'absolute lg:fixed top-0 h-[80px] w-full flex justify-center bg-white z-50 shadow'
 const buttons = ' md:flex hidden gap-5 '
 
 
